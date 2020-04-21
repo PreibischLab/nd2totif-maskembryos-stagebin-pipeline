@@ -46,13 +46,14 @@ logging.info("\n\nStarting script stardist_predict\n ***************************
 
 ############################ Create masks - stardist prediction ##############################
 
-logging.info(f'Starting mask predictions')
-
-model = StarDist2D(None, name='stardist', basedir="")
-
 # Get all images for prediction:
 gfp_images_paths = glob(os.path.join(dir_path_maxp_gfp,"*"))
 gfp_images_names = [os.path.basename(p)[:-4] for p in gfp_images_paths]
+
+try:
+    gfp_images_names[0]
+except:
+    logging.exception("No new embryos (gfp images) for stardist to predict")
 
 gfp_images = []
 
@@ -83,6 +84,11 @@ def resize_data(data, img_size, order=1):
 
 img_size = 512
 X = resize_data(X, img_size)
+
+
+logging.info(f'Starting mask predictions')
+
+model = StarDist2D(None, name='stardist', basedir="")
 
 # Predict instance segmentation in each image usng stardist:
 Y=[]

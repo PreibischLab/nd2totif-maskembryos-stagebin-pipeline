@@ -45,7 +45,11 @@ logging.info("\n\nStarting script make_masked_embryos_and_previews\n ***********
 os.makedirs(dir_preview, exist_ok=True, mode=0o777)
 
 # Load the predicted images:
-npzfile = np.load(predicted_npz_path)
+try:
+    npzfile = np.load(predicted_npz_path)
+except:
+    logging.exception("No new stardist predictions were made, so no new embryos to create/crop")
+
 labels_images, gfp_images_names = npzfile['arr_0'],list(npzfile['arr_1'])
 
 # Find beginning and ends of each label in each embryo:
