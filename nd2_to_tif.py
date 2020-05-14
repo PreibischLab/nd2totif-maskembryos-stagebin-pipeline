@@ -1,35 +1,30 @@
 import os
 from glob import glob
-import subprocess
 import pandas as pd
 import numpy as np
 from pims import ND2_Reader
-import re
 from skimage import io
 import tifffile as tif
 import sys
 import logging
+import shutil
 
 ##########################  Define all paths ############################
 
-dir_path = '/data/preibisch/Laura_Microscopy/dosage_compensation'
-analysis_path = os.path.join(dir_path, 'smFISH-analysis/fit')
-
-dir_path_nd2 = os.path.join(dir_path,'transcription_imaging')
-dir_path_tif = os.path.join(analysis_path, 'tifs')
-
-csv_path = os.path.join(analysis_path, 'embryos_csv', 'embryos.csv')
-
-scratch_dir = '/scratch/AG_Preibisch/Ella/embryo'
-pipeline_dir = os.path.join(scratch_dir, 'nd2totif_maskembryos_stagebin_pipeline')
-channels_csv_path = os.path.join(pipeline_dir, 'channel_to_channel_type.csv')
-failing_nd2_list_file = os.path.join(pipeline_dir, "failing_nd2toTiff_files_also_imagej.txt")
-new_failing_nd2_list_file = os.path.join(pipeline_dir, "failing_nd2toTiff_files.txt")
-
-dir_path_maxp_gfp = os.path.join(scratch_dir, 'maxp_gfp')
-scratch_csv_path = os.path.join(scratch_dir, 'embryos.csv')
+pipeline_dir = os.path.join('/scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline')
 
 log_file_path = os.path.join(pipeline_dir, 'pipeline.log')
+
+channels_csv_path = os.path.join(pipeline_dir, 'channel_to_channel_type.csv')
+
+failing_nd2_list_file = os.path.join(pipeline_dir, "failing_nd2toTiff_files.txt")
+
+csv_path = os.path.join(pipeline_dir, 'embryos.csv')
+
+dir_path_nd2 = os.path.join(pipeline_dir, 'nd2_temp_files')
+dir_path_tif = os.path.join(pipeline_dir, 'tif_temp_files')
+
+dir_path_maxp_gfp = os.path.join(pipeline_dir, 'maxp_gfp_temp_files')
 
 ######################### Set up log file ###############################
 
@@ -50,107 +45,17 @@ setup_logger()
 
 logging.info("\n\nStarting script nd2_to_tif\n *********************************************")
 
-############################### ND2 to TIF ###############################
-##########################################################################
-
-##################### Find all nd2 in folder #############################
-
-os.makedirs(dir_path_maxp_gfp, exist_ok=True, mode=0o777)
-
-# Find all nd2 files:
-def get_all_files(dir_path, condtions, suffix):
-
-    conditions_or_str = "|".join(conditions) 
-
-    # Get all files with conditions:
-    all_files = (subprocess.run(f'find {dir_path} -type f | egrep -i "{conditions_or_str}"', shell=True, 
-        check=True, stdout=subprocess.PIPE).stdout).decode("utf-8").splitlines()
-
-    all_w_suffix = [f for f in all_files if f.endswith(suffix)]
-    return all_w_suffix
-
-# All Files Conditions:
-conditions = ['n2', 'sea-12', 'mk4', 'cb428']
-all_nd2 = get_all_files(dir_path_nd2, conditions, '.nd2')
-
-################# Take only correct filename format to next step #################
-
-# Take only the files that work:
-all_nd2 = get_all_files(dir_path_nd2, conditions, '.nd2')
-
-conditions_or_str = "|".join(conditions) 
-pattern = f'\d{{6}}_({conditions_or_str})(_rnai.[a-z\d]+)?(_male)?(_[a-z\d]+.(int|ex)){{1,3}}_.+\.nd2'
-all_nd2_correct = [f for f in all_nd2 if bool(re.match(pattern, os.path.basename(f)))]
-
-# Give feedback on files that are not in the correct format and won't be processed:
-all_nd2_incorrect = [f for f in all_nd2 if not bool(re.match(pattern, os.path.basename(f)))]
-all_nd2_incorrect = [f for f in all_nd2_incorrect if ('specs' not in f) and ('meh' not in f)]
-nl = '\n'
-
-if len(all_nd2_incorrect)>0:
-    logging.warning(f'Files that are in incorrect format:\n{nl.join(all_nd2_incorrect)}')
-
-############################# Don't take duplicates #############################
-
-# delete from the list files that are sub files (individual stacks) of an nd2 files - to avoid doubles.
-# needed because every nd2 file can be multiple embryos tifs - and there are some nd2 files
-# that are duplicates - that have the original nd2 file and the extracted individual nd2 files
-
-all_nd2_names = [os.path.basename(f)[:-4] for f in all_nd2_correct]
-
-logging.info(f'number of nd2 files before deleting duplicates: {len(all_nd2_correct)}')
-
-#### NEED TO USE SET!!!!!
-pop_items = set([])
-for i,f in enumerate(all_nd2_names):
-    for j,fi in enumerate(all_nd2_names):
-
-        if i!=j and fi.startswith(f):
-
-            if f==fi:
-                #print(f'same file name twice {f}', flush=True)
-                pop_items.add(j)
-
-            elif fi[len(f)]=="_":
-                if "_" in fi[len(f)+1:]:
-                    #print('same prefix but has an extra "_" {fi}', flush=True)
-                    ## Need to maybe check those files in the future further, but seems not to be duplicates, but seperate files.
-                    placeholder = True
-                else:
-                    pop_items.add(j)
-            # I don't check without "_" because we might have file 01 and file 011.
-
-for it in sorted(pop_items, reverse=True):
-    all_nd2_correct.pop(it)
-
-logging.info(f'number of nd2 files after deleting duplicates: {len(all_nd2_correct)}')
-
-############################ Take only new files ################################
-
-# Find out which files are new and need processing (files that are not in csv yet):
-
-csv_file = pd.read_csv(csv_path)
-all_processed_files = csv_file['original filename'].tolist()
-# Delete the " serieisXXX" from nd2 filename in csv:
-all_processed_files = [(f.split(" "))[0] for f in all_processed_files if isinstance(f, str)]
-
-# Don't take files that failed nd2toTif in the past: 
-with open(failing_nd2_list_file,"r") as f:
-    all_failed_files = f.read().split('\n')
-
-# Take only files that didnt fail previously (all-failed):
-all_nd2_correct = [f for f in all_nd2_correct if f.split("transcription_imaging/")[-1] not in all_failed_files]
-
-# Take only new files (all-old):
-new_nd2_files = [f for f in all_nd2_correct if (os.path.basename(f))[:-4] not in all_processed_files]
-
-logging.info(f'number of new nd2 files: {len(new_nd2_files)}')
-
 ######################### ND2 to TIF #############################
 
-def find_latest_in_condition(output_path, condition):
+nd2_files = glob(os.path.join(dir_path_nd2,"*"))
 
-    condition_existing_files = [f for f in glob(os.path.join(output_path,f'{condition}*'))]
+csv_file = pd.read_csv(csv_path)
+
+#########################################################################
+
+def find_latest_in_condition(filenames_in_csv, condition):
+
+    condition_existing_files = [f for f in filenames_in_csv if f.startswith(condition)]
     if not condition_existing_files:
         return 0 
     as_num = [int(f.split('_')[-1].split('.')[0]) for f in condition_existing_files]
@@ -218,6 +123,7 @@ def fill_additional_df_cols(csv_file, new_filenames, channels_names, channels_em
 
 
 def readND2_saveTIFF(images, output_path, dir_path_maxp_gfp, csv_file):
+
     new_filenames = []
     try:
         with ND2_Reader(images) as frames:
@@ -245,7 +151,7 @@ def readND2_saveTIFF(images, output_path, dir_path_maxp_gfp, csv_file):
             condition = os.path.basename(images).split("_")[1].upper() if "rnai" not in images else f'RNAi_{os.path.basename(images).split("_")[2][5:]}'
 
             for i,frame in enumerate(frames):
-                condition_max = find_latest_in_condition(output_path, condition)
+                condition_max = find_latest_in_condition(csv_file["filename"].dropna().tolist(), condition)
 
                 new_name = f'{condition}_{condition_max+1}'
 
@@ -264,7 +170,6 @@ def readND2_saveTIFF(images, output_path, dir_path_maxp_gfp, csv_file):
 
                 make_maxproj(frame, f'{new_name}.tif', gfp_num, dir_path_maxp_gfp)
 
-
                 df = pd.DataFrame(new_row)
                 csv_file = pd.concat([csv_file, df])
                 csv_file = csv_file.reset_index(drop=True)
@@ -277,7 +182,6 @@ def readND2_saveTIFF(images, output_path, dir_path_maxp_gfp, csv_file):
                 
         frames.close()
 
-
     except Exception as e:
 
         exc_type, exc_obj, exc_tb = sys.exc_info()
@@ -285,18 +189,19 @@ def readND2_saveTIFF(images, output_path, dir_path_maxp_gfp, csv_file):
         logging.warning(f'\nException ND2_to_tif {images}\n{e}')
         logging.warning(f'{exc_type} {exc_tb.tb_lineno}\n')
 
-        with open(new_failing_nd2_list_file,"a+") as f:
+        with open(failing_nd2_list_file,"a+") as f:
             f.write(f'{images}\n')
 
         return csv_file
 
+    os.remove(images)
 
     csv_file = fill_additional_df_cols(csv_file, new_filenames, channels_names, channels_emission_n, dapi_num, gfp_num, z_size, os.path.basename(images))
 
     csv_file.to_csv(csv_path, index=False)
     return csv_file
 
-for f in new_nd2_files:
+for f in nd2_files:
     if (os.path.getsize(f))/1024/1024 > 1:
         csv_file = readND2_saveTIFF(f, dir_path_tif, dir_path_maxp_gfp, csv_file)
 
@@ -353,31 +258,9 @@ for i in range(5):
 
 csv_file = csv_file.reset_index(drop=True)
 csv_file.to_csv(csv_path, index=False)
+os.chmod(csv_path, 0o664)
 
 logging.info(f'Corrected lambda values (if needed)')
-
-############################ Create gfp images (for stardist) if image is missing ##############################
-
-#### Fisrt create the gfp images for images that are missing
-# if images were not processed in this round but nd2 to tif already done
-# Meaning that csv status for those images is -1 - gfp max projections need to be made
-# To run the mask prediction on:
-logging.info(f'Creating gpf max projections for any image with status -1 that wasnt created during this run')
-
-# Get all images that are already in gfp folder:
-gfp_images_paths = glob(os.path.join(dir_path_maxp_gfp,"*"))
-gfp_images_names = [os.path.basename(p)[:-4] for p in gfp_images_paths]
-
-missing_gfp_csv = csv_file[(csv_file["status"]==-1) & (~csv_file["filename"].isin(gfp_images_names))]
-
-for idx in missing_gfp_csv.index:
-    im = tif.imread(os.path.join(dir_path_tif, f'{missing_gfp_csv.at[idx,"filename"]}.tif'))
-    make_maxproj(im, f'{missing_gfp_csv.at[idx,"filename"]}.tif', missing_gfp_csv.at[idx,"GFP channel"], dir_path_maxp_gfp)
-
-
-############################### csv to scratch for stardist ################################
-
-csv_file.to_csv(scratch_csv_path, index=False)
 
 ############################### Log file output status ################################
 

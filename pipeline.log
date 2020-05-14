@@ -32853,119 +32853,752 @@ axes ['z'] do not exist
 2020-04-21 02:30:05,705 - INFO - 276 - success nd2_to_tif 190925_n2_male_dpy23.ex_mdh1.ex_sdc2.int_002 series50
 2020-04-21 02:30:15,567 - INFO - 276 - success nd2_to_tif 190925_n2_male_dpy23.ex_mdh1.ex_sdc2.int_002 series51
 2020-04-21 02:30:24,745 - INFO - 276 - success nd2_to_tif 190925_n2_male_dpy23.ex_mdh1.ex_sdc2.int_002 series52
-python: can't open file '/scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/stardist_predict.py': [Errno 2] No such file or directory
-[22;0t]0;IPython: embryo/nd2totif_maskembryos_stagebin_pipelinePython 3.6.7 | packaged by conda-forge | (default, Nov  6 2019, 16:19:42) 
-Type 'copyright', 'credits' or 'license' for more information
-IPython 7.9.0 -- An enhanced Interactive Python. Type '?' for help.
+2020-05-13 19:21:04,664 - INFO - 49 - 
 
-In [1]: 
-KeyboardInterrupt escaped interact()
+Starting script move_files_to_scratch
+ *********************************************
+2020-05-13 19:27:57,076 - INFO - 101 - number of nd2 files before deleting duplicates: 5071
+2020-05-13 19:28:04,676 - INFO - 126 - number of nd2 files after deleting duplicates: 760
+2020-05-13 19:28:04,795 - INFO - 155 - number of new nd2 files: 80
+2020-05-13 23:12:53,352 - INFO - 170 - Creating gpf max projections for any image with status -1
+2020-05-14 01:13:57,156 - INFO - 46 - 
 
-[23;0t
-In [1]: 
-KeyboardInterrupt escaped interact()
+Starting script nd2_to_tif
+ *********************************************
+2020-05-14 01:13:57,560 - WARNING - 189 - 
+Exception ND2_to_tif /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/nd2_temp_files/190808_n2_rnai.dpy27_dpy23.ex_mdh1.ex_dpy23.int_004.nd2
+LIM_ERR_NOTFOUND
+2020-05-14 01:13:57,560 - WARNING - 190 - <class 'Exception'> 129
 
-[23;0t
-In [1]: [23;0t[22;0t]0;IPython: embryo/nd2totif_maskembryos_stagebin_pipelinePython 3.6.7 | packaged by conda-forge | (default, Nov  6 2019, 16:19:42) 
-Type 'copyright', 'credits' or 'license' for more information
-IPython 7.9.0 -- An enhanced Interactive Python. Type '?' for help.
+2020-05-14 01:13:58,366 - WARNING - 189 - 
+Exception ND2_to_tif /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/nd2_temp_files/190828_n2_rnai.dpy27_dpy23.ex_mdh1.ex_dpy23.int_004.nd2
+LIM_ERR_NOTFOUND
+2020-05-14 01:13:58,367 - WARNING - 190 - <class 'Exception'> 129
 
-In [1]: [23;0tpython: can't open file '/scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/stardist_predict.py': [Errno 2] No such file or directory
-Traceback (most recent call last):
-  File "stardist_predict.py", line 5, in <module>
-    import pandas as pd
-ModuleNotFoundError: No module named 'pandas'
-2020-04-21 03:20:23,228 - INFO - 43 - 
+2020-05-14 01:13:58,473 - WARNING - 189 - 
+Exception ND2_to_tif /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/nd2_temp_files/180813_n2_sdc2.ex_sdc2.int_mdh1.ex_006.nd2
+LIM_ERR_NOTFOUND
+2020-05-14 01:13:58,473 - WARNING - 190 - <class 'Exception'> 129
+
+2020-05-14 01:13:58,576 - WARNING - 189 - 
+Exception ND2_to_tif /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/nd2_temp_files/181128_n2_rnai.dpy27_sdc2.ex_sdc2.int_mdh1.ex_pl_d_004.nd2
+LIM_ERR_NOTFOUND
+2020-05-14 01:13:58,576 - WARNING - 190 - <class 'Exception'> 129
+
+2020-05-14 01:13:59,004 - WARNING - 189 - 
+Exception ND2_to_tif /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/nd2_temp_files/180907_n2_rnai.set1_sdc2.ex_sdc2.int_mdh1.ex_001.nd2
+LIM_ERR_NOTFOUND
+2020-05-14 01:13:59,004 - WARNING - 190 - <class 'Exception'> 129
+
+2020-05-14 01:14:25,219 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_003 series1
+2020-05-14 01:14:42,315 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_003 series2
+2020-05-14 01:15:02,412 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_003 series3
+2020-05-14 01:15:22,031 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_003 series4
+2020-05-14 01:15:37,026 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_003 series5
+2020-05-14 01:15:51,321 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_003 series6
+2020-05-14 01:16:09,582 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_003 series7
+2020-05-14 01:16:27,668 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_003 series8
+2020-05-14 01:16:45,263 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_003 series9
+2020-05-14 01:17:02,076 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_003 series10
+2020-05-14 01:17:20,423 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_003 series11
+2020-05-14 01:17:39,309 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_003 series12
+2020-05-14 01:17:58,670 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_003 series13
+2020-05-14 01:18:18,091 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_003 series14
+2020-05-14 01:18:35,466 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_003 series15
+2020-05-14 01:18:54,342 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_003 series16
+2020-05-14 01:19:12,102 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_003 series17
+2020-05-14 01:19:27,953 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_003 series18
+2020-05-14 01:19:49,015 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_003 series19
+2020-05-14 01:20:04,724 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_003 series20
+2020-05-14 01:20:19,172 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_003 series21
+2020-05-14 01:20:34,735 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_003 series22
+2020-05-14 01:20:49,729 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_003 series23
+2020-05-14 01:21:07,793 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_003 series24
+2020-05-14 01:21:26,030 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_003 series25
+2020-05-14 01:21:45,455 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_003 series26
+2020-05-14 01:22:04,230 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_003 series27
+2020-05-14 01:22:22,009 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_003 series28
+2020-05-14 01:22:42,364 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_003 series29
+2020-05-14 01:22:59,964 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_003 series30
+2020-05-14 01:23:17,898 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_003 series31
+2020-05-14 01:23:35,803 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_003 series32
+2020-05-14 01:23:55,443 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_003 series33
+2020-05-14 01:24:15,156 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_003 series34
+2020-05-14 01:24:32,500 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_003 series35
+2020-05-14 01:24:49,931 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_003 series36
+2020-05-14 01:25:08,751 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_003 series37
+2020-05-14 01:25:23,774 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_003 series38
+2020-05-14 01:25:44,983 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_003 series39
+2020-05-14 01:26:00,036 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_003 series40
+2020-05-14 01:26:15,731 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_003 series41
+2020-05-14 01:26:35,024 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_003 series42
+2020-05-14 01:26:51,105 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_003 series43
+2020-05-14 01:27:11,105 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_003 series44
+2020-05-14 01:27:27,139 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_003 series45
+2020-05-14 01:27:46,081 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_003 series46
+2020-05-14 01:28:03,988 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_003 series47
+2020-05-14 01:28:24,795 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_003 series48
+2020-05-14 01:28:41,755 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_003 series49
+2020-05-14 01:28:59,695 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_003 series50
+2020-05-14 01:29:20,794 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_003 series51
+2020-05-14 01:29:36,726 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_003 series52
+2020-05-14 01:29:51,856 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_003 series53
+2020-05-14 01:30:18,232 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_003 series54
+2020-05-14 01:30:33,741 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_003 series55
+2020-05-14 01:30:51,873 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_003 series56
+2020-05-14 01:31:05,471 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_003 series57
+2020-05-14 01:31:31,100 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_002 series1
+2020-05-14 01:31:50,848 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_002 series2
+2020-05-14 01:32:09,113 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_002 series3
+2020-05-14 01:32:28,401 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_002 series4
+2020-05-14 01:32:44,961 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_002 series5
+2020-05-14 01:33:04,816 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_002 series6
+2020-05-14 01:33:17,140 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_002 series7
+2020-05-14 01:33:35,510 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_002 series8
+2020-05-14 01:33:53,669 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_002 series9
+2020-05-14 01:34:11,770 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_002 series10
+2020-05-14 01:34:31,098 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_002 series11
+2020-05-14 01:34:47,473 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_002 series12
+2020-05-14 01:35:00,465 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_002 series13
+2020-05-14 01:35:13,095 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_002 series14
+2020-05-14 01:35:27,170 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_002 series15
+2020-05-14 01:35:44,853 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_002 series16
+2020-05-14 01:36:03,935 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_002 series17
+2020-05-14 01:36:21,443 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_002 series18
+2020-05-14 01:36:39,247 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_002 series19
+2020-05-14 01:36:57,000 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_002 series20
+2020-05-14 01:37:16,341 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_002 series21
+2020-05-14 01:37:32,855 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_002 series22
+2020-05-14 01:37:52,506 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_002 series23
+2020-05-14 01:38:10,954 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_002 series24
+2020-05-14 01:38:29,150 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_002 series25
+2020-05-14 01:38:47,344 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_002 series26
+2020-05-14 01:39:05,186 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_002 series27
+2020-05-14 01:39:23,314 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_002 series28
+2020-05-14 01:39:42,582 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_002 series29
+2020-05-14 01:40:01,423 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_002 series30
+2020-05-14 01:40:20,441 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_002 series31
+2020-05-14 01:40:37,224 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_002 series32
+2020-05-14 01:40:51,431 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_002 series33
+2020-05-14 01:41:08,692 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_002 series34
+2020-05-14 01:41:26,381 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_002 series35
+2020-05-14 01:41:42,292 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_002 series36
+2020-05-14 01:41:57,952 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_002 series37
+2020-05-14 01:42:12,859 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_002 series38
+2020-05-14 01:42:29,064 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_002 series39
+2020-05-14 01:42:45,015 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_002 series40
+2020-05-14 01:43:04,196 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_002 series41
+2020-05-14 01:43:21,674 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_002 series42
+2020-05-14 01:43:39,794 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_002 series43
+2020-05-14 01:43:56,282 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_002 series44
+2020-05-14 01:44:10,411 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_002 series45
+2020-05-14 01:44:28,753 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_002 series46
+2020-05-14 01:44:47,657 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_002 series47
+2020-05-14 01:45:05,169 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_002 series48
+2020-05-14 01:45:19,850 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_002 series49
+2020-05-14 01:45:33,501 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_002 series50
+2020-05-14 01:45:48,329 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_002 series51
+2020-05-14 01:46:06,795 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_002 series52
+2020-05-14 01:46:25,033 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_002 series53
+2020-05-14 01:46:44,023 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_002 series54
+2020-05-14 01:47:00,924 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_002 series55
+2020-05-14 01:47:20,419 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_002 series56
+2020-05-14 01:47:37,395 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_002 series57
+2020-05-14 01:47:58,911 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_002 series58
+2020-05-14 01:48:14,961 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_002 series59
+2020-05-14 01:48:29,275 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_002 series60
+2020-05-14 01:48:49,812 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_002 series61
+2020-05-14 01:49:08,427 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_002 series62
+2020-05-14 01:49:25,942 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_002 series63
+2020-05-14 01:49:43,728 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_002 series64
+2020-05-14 01:49:56,817 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_002 series65
+2020-05-14 01:49:59,386 - WARNING - 189 - 
+Exception ND2_to_tif /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/nd2_temp_files/190716_n2_rnai.dpy27_dpy23.ex_mdh1.ex_dpy23.int_006.nd2
+LIM_ERR_NOTFOUND
+2020-05-14 01:49:59,386 - WARNING - 190 - <class 'Exception'> 129
+
+2020-05-14 01:49:59,932 - WARNING - 189 - 
+Exception ND2_to_tif /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/nd2_temp_files/181119_cb428_sdc2.ex_sdc2.int_mdh1.ex_pl_002.nd2
+LIM_ERR_NOTFOUND
+2020-05-14 01:49:59,932 - WARNING - 190 - <class 'Exception'> 129
+
+2020-05-14 01:50:16,287 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_001 series1
+2020-05-14 01:50:18,382 - WARNING - 189 - 
+Exception ND2_to_tif /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/nd2_temp_files/180821_n2_rnai.set1_sdc2.ex_sdc2.int_mdh1.ex_003.nd2
+LIM_ERR_NOTFOUND
+2020-05-14 01:50:18,382 - WARNING - 190 - <class 'Exception'> 129
+
+2020-05-14 01:50:44,683 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series1
+2020-05-14 01:51:04,472 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series2
+2020-05-14 01:51:22,529 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series3
+2020-05-14 01:51:36,268 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series4
+2020-05-14 01:52:00,471 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series5
+2020-05-14 01:52:18,329 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series6
+2020-05-14 01:52:36,019 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series7
+2020-05-14 01:52:53,743 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series8
+2020-05-14 01:53:14,952 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series9
+2020-05-14 01:53:29,523 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series10
+2020-05-14 01:53:47,071 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series11
+2020-05-14 01:54:06,173 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series12
+2020-05-14 01:54:25,927 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series13
+2020-05-14 01:54:45,860 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series14
+2020-05-14 01:55:01,065 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series15
+2020-05-14 01:55:19,609 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series16
+2020-05-14 01:55:38,314 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series17
+2020-05-14 01:55:57,335 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series18
+/home/ebahry/miniconda3/lib/python3.7/site-packages/pims/base_frames.py:522: UserWarning: Please call FramesSequenceND.__init__() at the start of thethe reader initialization.
+  warn("Please call FramesSequenceND.__init__() at the start of the"
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_591.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_592.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_594.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_595.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_596.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_605.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_606.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_607.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_609.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_611.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_615.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_619.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_620.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_621.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_622.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_623.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_625.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_626.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_635.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_636.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_638.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_640.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_648.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_650.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_653.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_654.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_656.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_657.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_658.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_659.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_661.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_662.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_663.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_664.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_665.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_666.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_667.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+2020-05-14 01:56:17,876 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series19
+2020-05-14 01:56:35,466 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series20
+2020-05-14 01:56:48,635 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series21
+2020-05-14 01:57:01,940 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series22
+2020-05-14 01:57:18,627 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series23
+2020-05-14 01:57:37,133 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series24
+2020-05-14 01:57:50,949 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series25
+2020-05-14 01:58:04,239 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series26
+2020-05-14 01:58:17,802 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series27
+2020-05-14 01:58:34,753 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series28
+2020-05-14 01:58:50,458 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series29
+2020-05-14 01:59:02,301 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series30
+2020-05-14 01:59:19,292 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series31
+2020-05-14 01:59:36,514 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series32
+2020-05-14 01:59:54,977 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series33
+2020-05-14 02:00:13,172 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series34
+2020-05-14 02:00:31,719 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series35
+2020-05-14 02:00:53,036 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series36
+2020-05-14 02:01:12,180 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series37
+2020-05-14 02:01:28,015 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series38
+2020-05-14 02:01:50,484 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series39
+2020-05-14 02:02:08,623 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series40
+2020-05-14 02:02:29,022 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series41
+2020-05-14 02:02:47,897 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series42
+2020-05-14 02:03:05,463 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series43
+2020-05-14 02:03:26,061 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series44
+2020-05-14 02:03:46,096 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series45
+2020-05-14 02:04:06,911 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series46
+2020-05-14 02:04:22,780 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series47
+2020-05-14 02:04:45,228 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series48
+2020-05-14 02:05:03,450 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series49
+2020-05-14 02:05:20,959 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series50
+2020-05-14 02:05:34,313 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series51
+2020-05-14 02:05:55,223 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series52
+2020-05-14 02:06:14,644 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series53
+2020-05-14 02:06:34,411 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series54
+2020-05-14 02:06:52,544 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series55
+2020-05-14 02:07:09,815 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series56
+2020-05-14 02:07:27,493 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series57
+2020-05-14 02:07:45,884 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series58
+2020-05-14 02:08:05,475 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series59
+2020-05-14 02:08:25,496 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series60
+2020-05-14 02:08:45,771 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series61
+2020-05-14 02:09:05,408 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series62
+2020-05-14 02:09:23,605 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series63
+2020-05-14 02:09:49,639 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series64
+2020-05-14 02:10:06,680 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series65
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_668.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_669.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_670.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_671.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_674.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_675.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_676.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_679.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_681.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_682.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_683.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_684.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_685.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_686.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_687.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_688.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_689.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_690.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_691.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_692.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_693.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_694.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_695.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_696.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_698.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_699.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_701.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_702.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_703.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_704.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_705.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_706.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_707.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_708.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_709.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_710.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_711.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_712.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_714.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+2020-05-14 02:10:22,973 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series66
+2020-05-14 02:10:40,477 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series67
+2020-05-14 02:11:00,786 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series68
+2020-05-14 02:11:23,021 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series69
+2020-05-14 02:11:39,689 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series70
+2020-05-14 02:12:02,332 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series71
+2020-05-14 02:12:21,872 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series72
+2020-05-14 02:12:41,443 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series73
+2020-05-14 02:12:57,519 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series74
+2020-05-14 02:13:18,944 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series75
+2020-05-14 02:13:33,010 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series76
+2020-05-14 02:13:49,481 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series77
+2020-05-14 02:14:09,333 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series78
+2020-05-14 02:14:25,540 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series79
+2020-05-14 02:14:42,680 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series80
+2020-05-14 02:14:57,678 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series81
+2020-05-14 02:15:18,916 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series82
+2020-05-14 02:15:38,745 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series83
+2020-05-14 02:15:55,092 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series84
+2020-05-14 02:16:19,804 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series85
+2020-05-14 02:16:32,859 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series86
+2020-05-14 02:16:46,055 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series87
+2020-05-14 02:17:08,777 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series88
+2020-05-14 02:17:25,398 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series89
+2020-05-14 02:17:34,756 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series90
+2020-05-14 02:17:48,631 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series91
+2020-05-14 02:18:02,927 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series92
+2020-05-14 02:18:18,706 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series93
+2020-05-14 02:18:40,627 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series94
+2020-05-14 02:18:53,358 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series95
+2020-05-14 02:19:11,043 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series96
+2020-05-14 02:19:28,552 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series97
+2020-05-14 02:19:46,199 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series98
+2020-05-14 02:20:02,225 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series99
+2020-05-14 02:20:21,925 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series100
+2020-05-14 02:20:38,124 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series101
+2020-05-14 02:20:53,366 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series102
+2020-05-14 02:21:02,405 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series103
+2020-05-14 02:21:21,483 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series104
+2020-05-14 02:21:38,655 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series105
+2020-05-14 02:21:57,124 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series106
+2020-05-14 02:22:15,814 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series107
+2020-05-14 02:22:34,034 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series108
+2020-05-14 02:22:50,460 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series109
+2020-05-14 02:23:10,881 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series110
+2020-05-14 02:23:26,469 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series111
+2020-05-14 02:23:38,918 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series112
+2020-05-14 02:23:57,554 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series113
+2020-05-14 02:24:17,846 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series114
+2020-05-14 02:24:30,757 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series115
+2020-05-14 02:24:45,390 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series116
+2020-05-14 02:25:06,165 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series117
+2020-05-14 02:25:24,624 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series118
+2020-05-14 02:25:41,269 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series119
+2020-05-14 02:26:05,895 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series120
+2020-05-14 02:26:20,004 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series121
+2020-05-14 02:26:35,335 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series122
+2020-05-14 02:26:52,789 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series123
+2020-05-14 02:27:05,056 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series124
+2020-05-14 02:27:13,861 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series125
+2020-05-14 02:27:43,437 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_002 series1
+2020-05-14 02:28:03,099 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_002 series2
+2020-05-14 02:28:19,194 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_002 series3
+2020-05-14 02:28:39,362 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_002 series4
+2020-05-14 02:28:59,446 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_002 series5
+2020-05-14 02:29:16,845 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_002 series6
+2020-05-14 02:29:34,275 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_002 series7
+2020-05-14 02:29:49,652 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_002 series8
+2020-05-14 02:30:07,000 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_002 series9
+2020-05-14 02:30:23,397 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_002 series10
+2020-05-14 02:30:42,601 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_002 series11
+2020-05-14 02:30:54,030 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_002 series12
+2020-05-14 02:31:20,674 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_004 series1
+2020-05-14 02:31:42,334 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_004 series2
+2020-05-14 02:32:00,865 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_004 series3
+2020-05-14 02:32:19,319 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_004 series4
+2020-05-14 02:32:36,829 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_004 series5
+2020-05-14 02:32:54,851 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_004 series6
+2020-05-14 02:33:12,732 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_004 series7
+2020-05-14 02:33:27,793 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_004 series8
+2020-05-14 02:33:42,337 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_004 series9
+2020-05-14 02:33:58,933 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_004 series10
+2020-05-14 02:34:13,337 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_004 series11
+2020-05-14 02:34:29,915 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_004 series12
+2020-05-14 02:34:46,140 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_004 series13
+2020-05-14 02:35:06,895 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_004 series14
+2020-05-14 02:35:27,272 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_004 series15
+2020-05-14 02:35:43,447 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_004 series16
+2020-05-14 02:36:07,281 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_004 series17
+2020-05-14 02:36:25,700 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_004 series18
+2020-05-14 02:36:47,677 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_004 series19
+2020-05-14 02:37:10,544 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_004 series20
+2020-05-14 02:37:29,059 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_004 series21
+2020-05-14 02:37:48,621 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_004 series22
+2020-05-14 02:38:04,618 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_004 series23
+2020-05-14 02:38:05,810 - WARNING - 189 - 
+Exception ND2_to_tif /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/nd2_temp_files/190808_n2_rnai.dpy27_dpy23.ex_mdh1.ex_dpy23.int_005.nd2
+year -4713 is out of range
+2020-05-14 02:38:05,810 - WARNING - 190 - <class 'ValueError'> 133
+
+2020-05-14 02:38:31,876 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_003 series1
+2020-05-14 02:38:50,315 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_003 series2
+2020-05-14 02:39:12,155 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_003 series3
+2020-05-14 02:39:32,144 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_003 series4
+2020-05-14 02:39:50,997 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_003 series5
+2020-05-14 02:40:12,304 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_003 series6
+2020-05-14 02:40:30,197 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_003 series7
+2020-05-14 02:40:51,755 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_003 series8
+2020-05-14 02:41:09,980 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_003 series9
+2020-05-14 02:41:27,589 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_003 series10
+2020-05-14 02:41:47,222 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_003 series11
+2020-05-14 02:42:07,484 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_003 series12
+2020-05-14 02:42:25,994 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_003 series13
+2020-05-14 02:42:42,708 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_003 series14
+2020-05-14 02:42:59,834 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_003 series15
+2020-05-14 02:43:19,917 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_003 series16
+2020-05-14 02:43:39,843 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_003 series17
+2020-05-14 02:43:57,815 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_003 series18
+2020-05-14 02:44:16,551 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_003 series19
+2020-05-14 02:44:38,100 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_003 series20
+2020-05-14 02:44:58,400 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_003 series21
+2020-05-14 02:45:16,278 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_003 series22
+2020-05-14 02:45:35,830 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_003 series23
+2020-05-14 02:46:01,793 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_003 series24
+2020-05-14 02:46:19,192 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_003 series25
+2020-05-14 02:46:33,342 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_003 series26
+2020-05-14 02:46:47,864 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_003 series27
+2020-05-14 02:47:02,358 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_003 series28
+2020-05-14 02:47:27,279 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_003 series29
+2020-05-14 02:47:44,543 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_003 series30
+2020-05-14 02:48:00,169 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_003 series31
+2020-05-14 02:48:16,016 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_003 series32
+2020-05-14 02:48:36,710 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_003 series33
+2020-05-14 02:48:54,446 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_003 series34
+2020-05-14 02:49:12,556 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_003 series35
+2020-05-14 02:49:30,794 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_003 series36
+2020-05-14 02:49:49,363 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_003 series37
+2020-05-14 02:50:11,740 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_003 series38
+2020-05-14 02:50:32,193 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_003 series39
+2020-05-14 02:50:52,546 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_003 series40
+2020-05-14 02:51:12,491 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_003 series41
+2020-05-14 02:51:31,639 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_003 series42
+2020-05-14 02:51:52,581 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_003 series43
+2020-05-14 02:52:11,741 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_003 series44
+2020-05-14 02:52:33,080 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_003 series45
+2020-05-14 02:52:54,527 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_003 series46
+2020-05-14 02:53:15,604 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_003 series47
+2020-05-14 02:53:33,465 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_003 series48
+2020-05-14 02:54:00,667 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_003 series49
+2020-05-14 02:54:16,739 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_003 series50
+2020-05-14 02:54:34,090 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_003 series51
+2020-05-14 02:54:49,398 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_003 series52
+2020-05-14 02:55:07,994 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_003 series53
+2020-05-14 02:55:30,135 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_003 series54
+2020-05-14 02:55:48,516 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_003 series55
+2020-05-14 02:56:10,768 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_003 series56
+2020-05-14 02:56:28,601 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_003 series57
+2020-05-14 02:56:44,616 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_003 series58
+2020-05-14 02:57:05,466 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_003 series59
+2020-05-14 02:57:21,719 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_003 series60
+2020-05-14 02:57:39,782 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_003 series61
+2020-05-14 02:57:56,743 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_003 series62
+2020-05-14 02:58:24,446 - INFO - 181 - success nd2_to_tif 191112_cb428_w04g35.ex_mdh1.ex_w04g35.int_001 series1
+2020-05-14 02:58:24,938 - WARNING - 189 - 
+Exception ND2_to_tif /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/nd2_temp_files/171017_n2_dpy23.ex_dpy23.int_mdh1.ex_015.nd2
+LIM_ERR_NOTFOUND
+2020-05-14 02:58:24,938 - WARNING - 190 - <class 'Exception'> 129
+
+2020-05-14 02:58:25,181 - WARNING - 189 - 
+Exception ND2_to_tif /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/nd2_temp_files/180919_n2_rnai.ama1_dpy23.ex_dpy23.int_mdh1.ex_001.nd2
+LIM_ERR_NOTFOUND
+2020-05-14 02:58:25,181 - WARNING - 190 - <class 'Exception'> 129
+
+2020-05-14 02:58:49,446 - INFO - 181 - success nd2_to_tif 200215_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_001 series1
+2020-05-14 02:58:50,046 - WARNING - 189 - 
+Exception ND2_to_tif /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/nd2_temp_files/181119_cb428_sdc2.ex_sdc2.int_mdh1.ex_pl_001.nd2
+LIM_ERR_NOTFOUND
+2020-05-14 02:58:50,046 - WARNING - 190 - <class 'Exception'> 129
+
+2020-05-14 02:58:50,269 - WARNING - 189 - 
+Exception ND2_to_tif /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/nd2_temp_files/171025_mk4_dpy23.ex_dpy23.int_mdh1.ex_005.nd2
+LIM_ERR_NOTFOUND
+2020-05-14 02:58:50,270 - WARNING - 190 - <class 'Exception'> 129
+
+2020-05-14 02:58:50,792 - WARNING - 189 - 
+Exception ND2_to_tif /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/nd2_temp_files/191025_n2_rnai.rluc_rab62.ex_mdh1.ex_rab62.int_002.nd2
+LIM_ERR_NOTFOUND
+2020-05-14 02:58:50,792 - WARNING - 190 - <class 'Exception'> 129
+
+2020-05-14 02:58:51,059 - WARNING - 189 - 
+Exception ND2_to_tif /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/nd2_temp_files/180903_n2_rnai.dpy27_sdc2.ex_sdc2.int_mdh1.ex_006.nd2
+LIM_ERR_NOTFOUND
+2020-05-14 02:58:51,059 - WARNING - 190 - <class 'Exception'> 129
+
+2020-05-14 02:58:51,155 - WARNING - 189 - 
+Exception ND2_to_tif /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/nd2_temp_files/180820_n2_rnai.set1_dpy23.ex_dpy23.int_mdh1.ex_002.nd2
+LIM_ERR_NOTFOUND
+2020-05-14 02:58:51,155 - WARNING - 190 - <class 'Exception'> 129
+
+2020-05-14 02:59:16,355 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series1
+2020-05-14 02:59:37,592 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series2
+2020-05-14 02:59:54,397 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series3
+2020-05-14 03:00:13,582 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series4
+2020-05-14 03:00:27,642 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series5
+2020-05-14 03:00:50,241 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series6
+2020-05-14 03:01:11,520 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series7
+2020-05-14 03:01:29,057 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series8
+2020-05-14 03:01:53,304 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series9
+2020-05-14 03:02:13,687 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series10
+2020-05-14 03:02:35,160 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series11
+2020-05-14 03:02:56,671 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series12
+2020-05-14 03:03:17,723 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series13
+2020-05-14 03:03:37,888 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series14
+2020-05-14 03:04:00,330 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series15
+2020-05-14 03:04:22,825 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series16
+2020-05-14 03:04:40,660 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series17
+2020-05-14 03:05:01,458 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series18
+2020-05-14 03:05:20,701 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series19
+2020-05-14 03:05:42,465 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series20
+2020-05-14 03:06:03,130 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series21
+2020-05-14 03:06:24,598 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series22
+2020-05-14 03:06:46,998 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series23
+2020-05-14 03:07:07,888 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series24
+2020-05-14 03:07:24,138 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series25
+2020-05-14 03:07:45,293 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series26
+2020-05-14 03:08:00,085 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series27
+2020-05-14 03:08:13,163 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series28
+2020-05-14 03:08:32,193 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series29
+2020-05-14 03:08:48,452 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series30
+2020-05-14 03:09:04,752 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series31
+2020-05-14 03:09:28,084 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series32
+2020-05-14 03:09:47,679 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series33
+2020-05-14 03:10:08,395 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series34
+2020-05-14 03:10:29,369 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series35
+2020-05-14 03:10:49,215 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series36
+2020-05-14 03:11:10,664 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series37
+2020-05-14 03:11:26,270 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series38
+2020-05-14 03:11:46,777 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series39
+2020-05-14 03:12:06,032 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series40
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_715.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_717.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_719.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_721.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_724.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_729.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_730.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_733.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_734.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_735.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_736.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_740.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_741.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_742.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_743.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_746.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_747.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_748.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_749.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_750.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_752.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_757.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_760.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_763.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_764.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_769.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_773.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_774.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_782.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_784.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_816.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_817.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_818.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_819.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_846.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_847.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_848.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_849.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_850.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+2020-05-14 03:12:23,977 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series41
+2020-05-14 03:12:44,361 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series42
+2020-05-14 03:13:04,650 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series43
+2020-05-14 03:13:19,287 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series44
+2020-05-14 03:13:44,725 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series45
+2020-05-14 03:14:07,985 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series46
+2020-05-14 03:14:26,577 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series47
+2020-05-14 03:14:47,218 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series48
+2020-05-14 03:15:03,776 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series49
+2020-05-14 03:15:22,792 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series50
+2020-05-14 03:15:38,878 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series51
+2020-05-14 03:15:50,365 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series52
+2020-05-14 03:16:05,017 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series53
+2020-05-14 03:16:13,504 - INFO - 181 - success nd2_to_tif 191110_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series54
+2020-05-14 03:16:23,181 - INFO - 208 - Finished nd2 to tif
+2020-05-14 03:16:23,580 - INFO - 220 - Added default values to csv (if new data was processed)
+2020-05-14 03:16:24,729 - INFO - 242 - Added channel types to csv (if new data was processed)
+2020-05-14 03:16:25,089 - INFO - 263 - Corrected lambda values (if needed)
+2020-05-14 03:16:25,093 - INFO - 275 - Finished script, yay!
+ ********************************************************************
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_851.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_852.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_854.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_855.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+nd2_to_tif.py:94: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_857.tif is a low contrast image
+  io.imsave(os.path.join(output_path, new_name), im)
+2020-05-14 03:17:30,511 - INFO - 46 - 
 
 Starting script stardist_predict
  *********************************************
-2020-04-21 03:20:23,228 - INFO - 47 - Starting mask predictions
-Using TensorFlow backend.
-/opt/conda/envs/tf_cpu/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:526: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
-  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
-/opt/conda/envs/tf_cpu/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:527: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
-  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
-/opt/conda/envs/tf_cpu/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:528: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
-  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
-/opt/conda/envs/tf_cpu/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:529: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
-  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
-/opt/conda/envs/tf_cpu/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:530: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
-  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
-/opt/conda/envs/tf_cpu/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:535: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
-  np_resource = np.dtype([("resource", np.ubyte, 1)])
-Traceback (most recent call last):
-  File "stardist_predict.py", line 49, in <module>
-    model = StarDist2D(None, name='stardist', basedir=nd2tif_dir_path)
-NameError: name 'nd2tif_dir_path' is not defined
-2020-04-21 03:23:53,441 - INFO - 45 - 
-
-Starting script stardist_predict
- *********************************************
-2020-04-21 03:23:53,442 - INFO - 49 - Starting mask predictions
-Using TensorFlow backend.
-/opt/conda/envs/tf_cpu/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:526: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
-  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
-/opt/conda/envs/tf_cpu/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:527: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
-  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
-/opt/conda/envs/tf_cpu/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:528: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
-  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
-/opt/conda/envs/tf_cpu/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:529: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
-  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
-/opt/conda/envs/tf_cpu/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:530: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
-  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
-/opt/conda/envs/tf_cpu/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:535: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
-  np_resource = np.dtype([("resource", np.ubyte, 1)])
-Traceback (most recent call last):
-  File "stardist_predict.py", line 51, in <module>
-    model = StarDist2D(None, name='stardist', basedir=pipeline_dir_path)
-  File "/opt/conda/envs/tf_cpu/lib/python3.6/site-packages/stardist/models/model2d.py", line 249, in __init__
-    super().__init__(config, name=name, basedir=basedir)
-  File "/opt/conda/envs/tf_cpu/lib/python3.6/site-packages/stardist/models/base.py", line 145, in __init__
-    super().__init__(config=config, name=name, basedir=basedir)
-  File "/opt/conda/envs/tf_cpu/lib/python3.6/site-packages/csbdeep/models/base_model.py", line 92, in __init__
-    self._set_logdir()
-  File "/opt/conda/envs/tf_cpu/lib/python3.6/site-packages/csbdeep/models/base_model.py", line 30, in wrapper
-    return f(*args, **kwargs)
-  File "/opt/conda/envs/tf_cpu/lib/python3.6/site-packages/csbdeep/models/base_model.py", line 131, in _set_logdir
-    raise FileNotFoundError("config file doesn't exist: %s" % str(config_file.resolve()))
-FileNotFoundError: config file doesn't exist: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/stardist/config.json
-2020-04-21 03:24:02,443 - INFO - 45 - 
-
-Starting script stardist_predict
- *********************************************
-2020-04-21 03:24:02,443 - INFO - 49 - Starting mask predictions
-Using TensorFlow backend.
-/opt/conda/envs/tf_cpu/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:526: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
-  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
-/opt/conda/envs/tf_cpu/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:527: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
-  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
-/opt/conda/envs/tf_cpu/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:528: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
-  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
-/opt/conda/envs/tf_cpu/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:529: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
-  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
-/opt/conda/envs/tf_cpu/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:530: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
-  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
-/opt/conda/envs/tf_cpu/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:535: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
-  np_resource = np.dtype([("resource", np.ubyte, 1)])
-Traceback (most recent call last):
-  File "stardist_predict.py", line 51, in <module>
-    model = StarDist2D(None, name='stardist', basedir=pipeline_dir_path)
-  File "/opt/conda/envs/tf_cpu/lib/python3.6/site-packages/stardist/models/model2d.py", line 249, in __init__
-    super().__init__(config, name=name, basedir=basedir)
-  File "/opt/conda/envs/tf_cpu/lib/python3.6/site-packages/stardist/models/base.py", line 145, in __init__
-    super().__init__(config=config, name=name, basedir=basedir)
-  File "/opt/conda/envs/tf_cpu/lib/python3.6/site-packages/csbdeep/models/base_model.py", line 92, in __init__
-    self._set_logdir()
-  File "/opt/conda/envs/tf_cpu/lib/python3.6/site-packages/csbdeep/models/base_model.py", line 30, in wrapper
-    return f(*args, **kwargs)
-  File "/opt/conda/envs/tf_cpu/lib/python3.6/site-packages/csbdeep/models/base_model.py", line 131, in _set_logdir
-    raise FileNotFoundError("config file doesn't exist: %s" % str(config_file.resolve()))
-FileNotFoundError: config file doesn't exist: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/stardist/config.json
-2020-04-21 03:27:20,921 - INFO - 45 - 
-
-Starting script stardist_predict
- *********************************************
-2020-04-21 03:27:20,921 - INFO - 49 - Starting mask predictions
+2020-05-14 03:19:10,538 - INFO - 95 - Starting mask predictions
 Using TensorFlow backend.
 /opt/conda/envs/tf_cpu/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:526: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
   _np_qint8 = np.dtype([("qint8", np.int8, 1)])
@@ -32982,89 +33615,15 @@ Using TensorFlow backend.
 WARNING:tensorflow:From /opt/conda/envs/tf_cpu/lib/python3.6/site-packages/tensorflow/python/ops/resource_variable_ops.py:435: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
 Instructions for updating:
 Colocations handled automatically by placer.
-2020-04-21 03:27:20,944 - WARNING - 323 - From /opt/conda/envs/tf_cpu/lib/python3.6/site-packages/tensorflow/python/ops/resource_variable_ops.py:435: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+2020-05-14 03:19:10,577 - WARNING - 323 - From /opt/conda/envs/tf_cpu/lib/python3.6/site-packages/tensorflow/python/ops/resource_variable_ops.py:435: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
 Instructions for updating:
 Colocations handled automatically by placer.
-2020-04-21 03:27:21.276936: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
-2020-04-21 03:27:21.307338: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3200000000 Hz
-2020-04-21 03:27:21.308921: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x556d3be9ceb0 executing computations on platform Host. Devices:
-2020-04-21 03:27:21.308957: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2020-05-14 03:19:14.062971: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX
+2020-05-14 03:19:14.183585: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2600095000 Hz
+2020-05-14 03:19:14.191814: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x56272d50ca70 executing computations on platform Host. Devices:
+2020-05-14 03:19:14.191881: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
 Loading network weights from 'weights_best.h5'.
 Loading thresholds from 'thresholds.json'.
 Using default values: prob_thresh=0.764707, nms_thresh=0.3.
-Traceback (most recent call last):
-  File "stardist_predict.py", line 54, in <module>
-    gfp_images_paths = glob.glob(os.path.join(dir_path_maxp_gfp,"*"))
-AttributeError: 'function' object has no attribute 'glob'
-2020-04-21 03:28:38,356 - INFO - 45 - 
-
-Starting script stardist_predict
- *********************************************
-2020-04-21 03:28:38,357 - INFO - 49 - Starting mask predictions
-Using TensorFlow backend.
-/opt/conda/envs/tf_cpu/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:526: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
-  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
-/opt/conda/envs/tf_cpu/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:527: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
-  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
-/opt/conda/envs/tf_cpu/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:528: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
-  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
-/opt/conda/envs/tf_cpu/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:529: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
-  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
-/opt/conda/envs/tf_cpu/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:530: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
-  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
-/opt/conda/envs/tf_cpu/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:535: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
-  np_resource = np.dtype([("resource", np.ubyte, 1)])
-WARNING:tensorflow:From /opt/conda/envs/tf_cpu/lib/python3.6/site-packages/tensorflow/python/ops/resource_variable_ops.py:435: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
-Instructions for updating:
-Colocations handled automatically by placer.
-2020-04-21 03:28:38,379 - WARNING - 323 - From /opt/conda/envs/tf_cpu/lib/python3.6/site-packages/tensorflow/python/ops/resource_variable_ops.py:435: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
-Instructions for updating:
-Colocations handled automatically by placer.
-2020-04-21 03:28:38.685532: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
-2020-04-21 03:28:38.716885: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3200000000 Hz
-2020-04-21 03:28:38.719845: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x55c1b9a4e510 executing computations on platform Host. Devices:
-2020-04-21 03:28:38.719884: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
-Loading network weights from 'weights_best.h5'.
-Loading thresholds from 'thresholds.json'.
-Using default values: prob_thresh=0.764707, nms_thresh=0.3.
-Traceback (most recent call last):
-  File "stardist_predict.py", line 54, in <module>
-    gfp_images_paths = glob.glob(os.path.join(dir_path_maxp_gfp,"*"))
-AttributeError: 'function' object has no attribute 'glob'
-2020-04-21 03:29:36,232 - INFO - 45 - 
-
-Starting script stardist_predict
- *********************************************
-2020-04-21 03:29:36,232 - INFO - 49 - Starting mask predictions
-Using TensorFlow backend.
-/opt/conda/envs/tf_cpu/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:526: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
-  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
-/opt/conda/envs/tf_cpu/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:527: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
-  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
-/opt/conda/envs/tf_cpu/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:528: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
-  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
-/opt/conda/envs/tf_cpu/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:529: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
-  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
-/opt/conda/envs/tf_cpu/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:530: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
-  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
-/opt/conda/envs/tf_cpu/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:535: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
-  np_resource = np.dtype([("resource", np.ubyte, 1)])
-WARNING:tensorflow:From /opt/conda/envs/tf_cpu/lib/python3.6/site-packages/tensorflow/python/ops/resource_variable_ops.py:435: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
-Instructions for updating:
-Colocations handled automatically by placer.
-2020-04-21 03:29:36,254 - WARNING - 323 - From /opt/conda/envs/tf_cpu/lib/python3.6/site-packages/tensorflow/python/ops/resource_variable_ops.py:435: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
-Instructions for updating:
-Colocations handled automatically by placer.
-2020-04-21 03:29:36.554877: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
-2020-04-21 03:29:36.587104: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3200000000 Hz
-2020-04-21 03:29:36.588843: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x55d29032ce00 executing computations on platform Host. Devices:
-2020-04-21 03:29:36.588879: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
-Loading network weights from 'weights_best.h5'.
-Loading thresholds from 'thresholds.json'.
-Using default values: prob_thresh=0.764707, nms_thresh=0.3.
-Traceback (most recent call last):
-  File "stardist_predict.py", line 94, in <module>
-    labels_images = resize_data(Y, img_size, order=0)
-  File "stardist_predict.py", line 76, in resize_data
-    data_rescaled = np.zeros((data.shape[0], img_size, img_size))
-AttributeError: 'list' object has no attribute 'shape'
+2020-05-14 03:20:35,109 - INFO - 126 - Finished script, yay!
+ ********************************************************************

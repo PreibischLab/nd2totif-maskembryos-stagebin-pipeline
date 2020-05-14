@@ -16,15 +16,16 @@ from stardist.models import StarDist2D
 
 ##########################  Define all paths ############################
 
-dir_path = '../'
+dir_path = '.'
+#dir_path = '/fast/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/'
 
-dir_path_maxp_gfp = os.path.join(dir_path, 'maxp_gfp')
+dir_path_maxp_gfp = os.path.join(dir_path, 'maxp_gfp_temp_files')
 csv_path = os.path.join(dir_path, 'embryos.csv')
-predicted_npz_path = os.path.join(dir_path, 'predicted_masks_and_filenames')
+predicted_npz_path = os.path.join(dir_path, 'predicted_masks_and_filenames.npz')
 
-pipeline_dir_path = os.path.join(dir_path, 'nd2totif_maskembryos_stagebin_pipeline')
+#pipeline_dir_path = os.path.join(dir_path, 'nd2totif_maskembryos_stagebin_pipeline')
 
-log_file_path = os.path.join(dir_path, 'nd2totif_maskembryos_stagebin_pipeline', 'pipeline.log')
+log_file_path = os.path.join(dir_path, 'pipeline.log')
 
 ######################### Set up log file ###############################
 
@@ -54,21 +55,26 @@ try:
     gfp_images_names[0]
 except:
     logging.exception("No new embryos (gfp images) for stardist to predict")
+    exit(1)
 
 gfp_images = []
 
 # Get all images:
-for i,n in enumerate(gfp_images_names):
-    gfp_images.append(tif.imread(os.path.join(dir_path_maxp_gfp, n)))
+for p in gfp_images_paths:
+    gfp_images.append(tif.imread(p))
 
 # Normalize each image:
-X = np.asarray(gfp_images)
+X = np.asarray(gfp_images, dtype=np.float32)
+
 X[X==0] = np.nan
+
 for i,im in enumerate(X):
     normed_im = (im-np.nanmin(im)) / (np.nanmax(im)-np.nanmin(im))
     X[i] = normed_im
 
 X = np.nan_to_num(X)
+
+X = np.asarray(X)
 
 # Resize the data:
 ## order ---- 0: Nearest-neighbor, 1: Bi-linear (default)
@@ -97,13 +103,15 @@ for x in X:
     Y.append(y)
 
 img_size = 1024
+Y = np.asarray(Y)
 labels_images = resize_data(Y, img_size, order=0)
 
 # Save the predictions:
-np.savez(predicted_npz_path, labels_images, np.asarray(gfp_images_names))
+np.savez(predicted_npz_path, np.asarray(labels_images), np.asarray(gfp_images_names))
+os.chmod(predicted_npz_path, 0o664)
+
 # Remove the dir of the gfp images that were predicted:
 rmtree(dir_path_maxp_gfp)
-os.remove(csv_path)
 
 ############################### Log file output status ################################
 
@@ -119,4 +127,3 @@ logging.info("Finished script, yay!\n ******************************************
 
 
 ###########################
-

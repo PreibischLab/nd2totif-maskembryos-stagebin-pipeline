@@ -2,7 +2,7 @@ import os
 from glob import glob
 import tifffile as tif
 import sys
-
+import pandas as pd
 import logging
 
 # Keras - autoencoder
@@ -20,7 +20,7 @@ log_file_path = os.path.join(pipeline_dir, 'pipeline.log')
 model_and_weights_path = os.path.join(pipeline_dir, 'stage_bin_fullmodel_MODELandWEIGHTS_after100epochs_big_adam_drop0.03_imsize128_period20_batch64.h5')
 
 dir_path_finaldata = os.path.join(dir_path, 'finaldata')
-dir_path_final_maxp_dapi = os.path.join(dir_path_finaldata, 'masks')
+#dir_path_final_mask = os.path.join(dir_path_finaldata, 'masks')
 dir_path_final_maxp_dapi = os.path.join(dir_path_finaldata, 'dapi_maxp')
 
 ######################### Set up log file ###############################
@@ -51,7 +51,12 @@ csv_file = pd.read_csv(csv_path)
 csv_file = csv_file.reset_index(drop=True)
 
 # Find all the rows/embryos to predict stage:
-df_embryos_to_predict = csv_file[(csv_file["#nucs_predicted"]==-1) & ((csv_file["status"]==1) | (csv_file["status"]==-1)) & (csv_file["#channels"]>3)]
+#df_embryos_to_predict = csv_file[(csv_file["#nucs_predicted"]==-1) & ((csv_file["status"]==1) | (csv_file["status"]==-1)) & (csv_file["#channels"]>3)]
+df_embryos_to_predict = csv_file[(csv_file["#nucs_predicted"]==-1) & (~csv_file["cropped_image_file"].isna()) & ((csv_file["status"]==1) | (csv_file["status"]==-1)) & (csv_file["#channels"]>3)]
+
+if df_embryos_to_predict.empty:
+    logging.exception("No embryos to predict stage")
+    exit(1)
 
 ## Load all dapi max projection images:
 

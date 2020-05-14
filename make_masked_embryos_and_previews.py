@@ -5,22 +5,23 @@ import logging
 import tifffile as tif
 import pandas as pd
 import numpy as np
+from skimage import io
+import shutil
 
-dir_path = '/data/preibisch/Laura_Microscopy/dosage_compensation/smFISH-analysis/fit'
+pipeline_dir = os.path.join('/scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline')
 
-csv_path = os.path.join(dir_path, 'embryos_csv', 'embryos.csv')
+csv_path = os.path.join(pipeline_dir, 'embryos.csv')
 
-dir_path_tif = os.path.join(dir_path, 'tifs')
+dir_path_tif = os.path.join(pipeline_dir, 'tif_temp_files')
 
-dir_path_finaldata = os.path.join(dir_path, 'finaldata')
-dir_path_final_maxp_dapi = os.path.join(dir_path_finaldata, 'dapi_maxp')
+dir_path_finaldata = os.path.join(pipeline_dir, 'finaldata_temp_files')
 
-scratch_dir = '/scratch/AG_Preibisch/Ella/embryo/'
+dir_dapi = os.path.join(pipeline_dir, 'dapi_maxp')
+dir_preview = os.path.join(pipeline_dir, "preview_embryos")
 
-dir_preview = os.path.join(scratch_dir, "preview_embryos")
-predicted_npz_path = os.path.join(scratch_dir, 'predicted_masks_and_filenames.npz')
+predicted_npz_path = os.path.join(pipeline_dir, 'predicted_masks_and_filenames.npz')
 
-log_file_path = os.path.join(scratch_dir, 'nd2totif_maskembryos_stagebin_pipeline', 'pipeline.log')
+log_file_path = os.path.join(pipeline_dir, 'pipeline.log')
 
 ######################### Set up log file ###############################
 
@@ -44,26 +45,56 @@ logging.info("\n\nStarting script make_masked_embryos_and_previews\n ***********
 
 os.makedirs(dir_preview, exist_ok=True, mode=0o777)
 
+shutil.rmtree(dir_path_finaldata, ignore_errors=True)
+os.makedirs(dir_path_finaldata, mode=0o777) 
+
+shutil.rmtree(dir_path_final_tif, ignore_errors=True)
+os.makedirs(dir_path_final_tif, mode=0o777) 
+
+shutil.rmtree(dir_path_final_masks, ignore_errors=True)
+os.makedirs(dir_path_final_masks, mode=0o777) 
+
 # Load the predicted images:
 try:
     npzfile = np.load(predicted_npz_path)
 except:
     logging.exception("No new stardist predictions were made, so no new embryos to create/crop")
+    exit(1)
 
 labels_images, gfp_images_names = npzfile['arr_0'],list(npzfile['arr_1'])
 
 # Find beginning and ends of each label in each embryo:
 embryo_labels_first_Ys_Xs_last_Ys_Xs = []
+images_unique_labels = []
 pad_embryo_size = 40
 
+## 73 562 seem to be the same image
+## 604 1314
 for labels_im in labels_images:
 
-    # [1:] since zero is the background
-    embryo_labels_idxs = [np.where(labels_im==u) for u in np.unique(labels_im)[1:]]
+    im_firsts_lasts = []
 
-    embryo_labels_first_Ys_Xs_last_Ys_Xs.append([[
-        np.min(idxs[0])-pad_embryo_size, np.min(idxs[1])-pad_embryo_size, np.max(idxs[0])+pad_embryo_size, np.max(idxs[1])+pad_embryo_size] 
-        for idxs in embryo_labels_idxs])
+    # [1:] since zero is the background
+    unique_labels = np.unique(labels_im)[1:]
+    embryo_labels_idxs = [np.where(labels_im==u) for u in unique_labels]
+
+    for idxs in embryo_labels_idxs:
+
+        # Check if embryo is cut:
+        # For now, if cut, not using it:
+        if np.min(idxs[0])==0 or np.min(idxs[1])==0 or np.max(idxs[0])==1023 or np.max(idxs[1])==1023:
+            a = 0
+
+        else:
+            # find first/last coordinate and substracts
+            im_firsts_lasts.append([max(np.min(idxs[0])-pad_embryo_size, 0), 
+                max(np.min(idxs[1])-pad_embryo_size, 0), 
+                min(np.max(idxs[0])+pad_embryo_size, 1023), 
+                min(np.max(idxs[1])+pad_embryo_size, 1023)])
+
+    embryo_labels_first_Ys_Xs_last_Ys_Xs.append(im_firsts_lasts)
+    images_unique_labels.append(unique_labels)
+
 
 ### Add the embryos to the csv:
 # Find the index of each row that needs to be duplicated x number of times based on the amount of embryos in the image:
@@ -87,7 +118,7 @@ for i,im_name in enumerate(gfp_images_names):
 
             # Add individual embryos to csv:
 
-            im_df = pd.concat(csv_file[csv_file['filename']==im_name]*num_rows_to_add)
+            im_df = pd.concat([csv_file[csv_file['filename']==im_name]]*num_of_embryos)
             im_df = im_df.reset_index(drop=True)
             im_df["status"] = 0
 
@@ -100,8 +131,8 @@ for i,im_name in enumerate(gfp_images_names):
                 im_df.loc[j,"cropped_image_file"] = embryo_im_name + '.tif'
                 im_df.loc[j,"cropped_mask_file"] = embryo_im_name + '.mask.tif'
 
-                im_df.loc[j,"crop_offset_y"] = embryo_coord[0]
                 im_df.loc[j,"crop_offset_x"] = embryo_coord[1]
+                im_df.loc[j,"crop_offset_y"] = embryo_coord[0]
                 im_df.loc[j,"ellipsoid"] = f'Crop_end_coords--{embryo_coord[2]}--{embryo_coord[3]}' 
 
             # Find the original row - to delete.
@@ -118,6 +149,8 @@ for i,im_name in enumerate(gfp_images_names):
 
 csv_file.to_csv(csv_path, index=False)
 
+#######################################################################
+# Create images individual embryos:
 
 def make_maxproj(im, new_name, channel_num, output_path, save_im=True):
 
@@ -133,26 +166,28 @@ def make_maxproj(im, new_name, channel_num, output_path, save_im=True):
 
 # create finaldata images and preview images:
 
-def make_final_tifs_and_preview(im_df, dir_path_tif, dir_path_finaldata, gfp_full_im, mask_full_im, dir_preview):
+def make_final_tifs_and_preview(im_df, dir_path_tif, dir_path_finaldata, mask_full_im, unique_labels, dir_preview, dir_dapi):
     im = tif.imread(os.path.join(dir_path_tif, f'{im_df.at[0,"filename"]}.tif'))
 
     is_dapi_stack = 0 if im[0,int(im_df.at[0,'DAPI channel']),0,0]==0 else 1
 
-    for idx in im_df.index:
-        end_coords = im_df.at[idx,"ellipsoid"].split('--')[1:]
+    for i,idx in enumerate(im_df.index):
+        end_coords = list(map(int, im_df.at[idx,"ellipsoid"].split('--')[1:]))
+        coords = [int(im_df.at[idx,"crop_offset_y"]), end_coords[0], int(im_df.at[idx,"crop_offset_x"]), end_coords[1]]
 
-        embryo_tif = im[im_df.at[idx,"crop_offset_y"]:end_coords[0],im_df.at[idx,"crop_offset_y"]:end_coords[1]]
+        print(coords)
+
+        embryo_tif = im[:,:,coords[0]:coords[1],coords[2]:coords[3]]
         tif.imsave(os.path.join(dir_path_finaldata,'tifs',im_df.at[idx,"cropped_image_file"]), embryo_tif)
 
-        embryo_mask = mask_full_im[im_df.at[idx,"crop_offset_y"]:end_coords[0],im_df.at[idx,"crop_offset_y"]:end_coords[1]]
-        embryo_val = embryo_mask[int(embryo_mask.shape[0]/2),int(embryo_mask.shape[1]/2)]
-        embryo_mask[embryo_mask==embryo_val] = 255
-        embryo_mask[embryo_mask!=embryo_val] = 0
-        tif.imsave(os.path.join(dir_path_finaldata,'masks',im_df.at[idx,"cropped_mask_file"]), embryo_mask)
+        embryo_mask = mask_full_im[coords[0]:coords[1],coords[2]:coords[3]]
+        embryo_mask[embryo_mask==unique_labels[i]] = 255
+        embryo_mask[embryo_mask==unique_labels[i]] = 0
+        tif.imsave(os.path.join(dir_path_finaldata,'masks',im_df.at[idx,"cropped_mask_file"]), embryo_mask.astype(np.int8))
 
-        dapi_im = make_maxproj(embryo_tif, im_df.at[idx,"cropped_image_file"], int(im_df.at[idx,"DAPI channel"]), dir_path_final_maxp_dapi)
+        dapi_im = make_maxproj(embryo_tif, im_df.at[idx,"cropped_image_file"], int(im_df.at[idx,"DAPI channel"]), dir_dapi)
         fish_im = make_maxproj(embryo_tif, False, 0, False, save_im=False)
-        gfp_im = gfp_full_im[im_df.at[idx,"crop_offset_y"]:end_coords[0],im_df.at[idx,"crop_offset_y"]:end_coords[1]]
+        gfp_im = make_maxproj(embryo_tif, False, int(im_df.at[idx,"GFP channel"]), False, save_im=False)
 
         # Normalize images:
         dapi_im = dapi_im/np.max(dapi_im) if np.max(dapi_im)>1 else dapi_im
@@ -160,10 +195,10 @@ def make_final_tifs_and_preview(im_df, dir_path_tif, dir_path_finaldata, gfp_ful
         gfp_im = gfp_im/np.max(gfp_im) if np.max(gfp_im)>1 else gfp_im
 
         ## Create the preview:
-        preview_im = np.zeros((gfp_im.shape[0]*2, gfp_im.shape[1]*2))
+        preview_im = np.zeros((gfp_im.shape[0]*2, gfp_im.shape[1]*2), dtype=np.float32)
 
         preview_im[:gfp_im.shape[0], :gfp_im.shape[1]] = gfp_im
-        preview_im[:gfp_im.shape[0], gfp_im.shape[1]:] = mask_im
+        preview_im[:gfp_im.shape[0], gfp_im.shape[1]:] = embryo_mask/255
         preview_im[gfp_im.shape[0]:, :gfp_im.shape[1]] = dapi_im
         preview_im[gfp_im.shape[0]:, gfp_im.shape[1]:] = fish_im
 
@@ -175,11 +210,12 @@ def make_final_tifs_and_preview(im_df, dir_path_tif, dir_path_finaldata, gfp_ful
 for i,im_name in enumerate(gfp_images_names):
 
     im_rows = csv_file[(csv_file['filename']==im_name) & (csv_file['status']==0)]
+    im_rows = im_rows.reset_index(drop=True)
 
     if im_rows.shape[0]!=0:
 
         #### Add finaldata images for each embryo - tif, mask, dapi max projection:
-        is_dapi_stack = make_final_tifs_and_preview(im_rows, dir_path_tif, dir_path_finaldata, gfp_images[i], Y[i], dir_preview)
+        is_dapi_stack = make_final_tifs_and_preview(im_rows, dir_path_tif, dir_path_finaldata, labels_images[i], images_unique_labels[i], dir_preview, dir_dapi)
 
         csv_file.loc[csv_file['filename']==im_name, "is_dapi_stack"] = is_dapi_stack
 
@@ -198,6 +234,6 @@ if len(permission_errors)>0:
     logging.warning(f'AY YAY YAY, permission errors: \n {nl.join(permission_errors)}')
 
 logging.info("Finished script, yay!\n ********************************************************************")
-
+"""
 
 ###########################
