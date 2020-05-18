@@ -133,7 +133,7 @@ for i,im_name in enumerate(gfp_images_names):
 
                 im_df.loc[j,"crop_offset_x"] = embryo_coord[1]
                 im_df.loc[j,"crop_offset_y"] = embryo_coord[0]
-                im_df.loc[j,"ellipsoid"] = f'Crop_end_coords--{embryo_coord[2]}--{embryo_coord[3]}' 
+                im_df.loc[j,"ellipse"] = f'Crop_end_coords--{embryo_coord[2]}--{embryo_coord[3]}' 
 
             # Find the original row - to delete.
             idx = csv_file[csv_file['filename']==im_name].index
@@ -172,18 +172,24 @@ def make_final_tifs_and_preview(im_df, dir_path_tif, dir_path_finaldata, mask_fu
     is_dapi_stack = 0 if im[0,int(im_df.at[0,'DAPI channel']),0,0]==0 else 1
 
     for i,idx in enumerate(im_df.index):
-        end_coords = list(map(int, im_df.at[idx,"ellipsoid"].split('--')[1:]))
+        end_coords = list(map(int, im_df.at[idx,"ellipse"].split('--')[1:]))
         coords = [int(im_df.at[idx,"crop_offset_y"]), end_coords[0], int(im_df.at[idx,"crop_offset_x"]), end_coords[1]]
 
         print(coords)
 
         embryo_tif = im[:,:,coords[0]:coords[1],coords[2]:coords[3]]
         tif.imsave(os.path.join(dir_path_finaldata,'tifs',im_df.at[idx,"cropped_image_file"]), embryo_tif)
+        os.chmod(os.path.join(dir_path_finaldata,'tifs',im_df.at[idx,"cropped_image_file"]), 0o664)
 
         embryo_mask = mask_full_im[coords[0]:coords[1],coords[2]:coords[3]]
         embryo_mask[embryo_mask==unique_labels[i]] = 255
         embryo_mask[embryo_mask==unique_labels[i]] = 0
         tif.imsave(os.path.join(dir_path_finaldata,'masks',im_df.at[idx,"cropped_mask_file"]), embryo_mask.astype(np.int8))
+        os.chmod(os.path.join(dir_path_finaldata,'masks',im_df.at[idx,"cropped_mask_file"]), 0o664)
+        # Save the mask also in scratch masks dir:
+        shutil.copyfile(os.path.join(dir_path_finaldata,'masks',im_df.at[idx,"cropped_mask_file"]), 
+            os.path.join(pipeline_dir,'masks',im_df.at[idx,"cropped_mask_file"]))
+        os.chmod(os.path.join(pipeline_dir,'masks',im_df.at[idx,"cropped_mask_file"]), 0o664)
 
         dapi_im = make_maxproj(embryo_tif, im_df.at[idx,"cropped_image_file"], int(im_df.at[idx,"DAPI channel"]), dir_dapi)
         fish_im = make_maxproj(embryo_tif, False, 0, False, save_im=False)
@@ -203,6 +209,7 @@ def make_final_tifs_and_preview(im_df, dir_path_tif, dir_path_finaldata, mask_fu
         preview_im[gfp_im.shape[0]:, gfp_im.shape[1]:] = fish_im
 
         tif.imsave(os.path.join(dir_preview,im_df.at[idx,"cropped_image_file"]), preview_im)
+        os.chmod(os.path.join(dir_preview,im_df.at[idx,"cropped_image_file"]), 0o664)
 
     return is_dapi_stack
 
@@ -220,6 +227,7 @@ for i,im_name in enumerate(gfp_images_names):
         csv_file.loc[csv_file['filename']==im_name, "is_dapi_stack"] = is_dapi_stack
 
 csv_file.to_csv(csv_path, index=False)
+os.chmod(csv_path, 0o664)
 
 os.remove(predicted_npz_path)
 

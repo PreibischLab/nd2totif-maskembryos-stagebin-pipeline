@@ -4,24 +4,22 @@ import tifffile as tif
 import sys
 import pandas as pd
 import logging
+import numpy as np
+from skimage.transform import resize 
 
 # Keras - autoencoder
 from keras.models import Model, load_model
 
+pipeline_dir = os.path.join('/scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline')
 
-dir_path = '/data/preibisch/Laura_Microscopy/dosage_compensation/smFISH-analysis/fit'
+csv_path = os.path.join(pipeline_dir, 'embryos.csv')
 
-csv_path = os.path.join(dir_path, 'embryos_csv', 'embryos.csv')
-
-scratch_dir = '/scratch/AG_Preibisch/Ella/embryo/'
-pipeline_dir = os.path.join(scratch_dir, 'nd2totif_maskembryos_stagebin_pipeline')
 log_file_path = os.path.join(pipeline_dir, 'pipeline.log')
 
-model_and_weights_path = os.path.join(pipeline_dir, 'stage_bin_fullmodel_MODELandWEIGHTS_after100epochs_big_adam_drop0.03_imsize128_period20_batch64.h5')
+stage_prediction_model_and_weights_path = os.path.join(pipeline_dir, 'stage_bin_fullmodel_MODELandWEIGHTS_after100epochs_big_adam_drop0.03_imsize128_period20_batch64.h5')
 
-dir_path_finaldata = os.path.join(dir_path, 'finaldata')
-#dir_path_final_mask = os.path.join(dir_path_finaldata, 'masks')
-dir_path_final_maxp_dapi = os.path.join(dir_path_finaldata, 'dapi_maxp')
+dir_mask = os.path.join(pipeline_dir, 'masks')
+dir_maxp_dapi = os.path.join(pipeline_dir, 'dapi_maxp')
 
 ######################### Set up log file ###############################
 
@@ -52,7 +50,8 @@ csv_file = csv_file.reset_index(drop=True)
 
 # Find all the rows/embryos to predict stage:
 #df_embryos_to_predict = csv_file[(csv_file["#nucs_predicted"]==-1) & ((csv_file["status"]==1) | (csv_file["status"]==-1)) & (csv_file["#channels"]>3)]
-df_embryos_to_predict = csv_file[(csv_file["#nucs_predicted"]==-1) & (~csv_file["cropped_image_file"].isna()) & ((csv_file["status"]==1) | (csv_file["status"]==-1)) & (csv_file["#channels"]>3)]
+
+df_embryos_to_predict = csv_file[((csv_file["status"]==0) | (csv_file["status"]==1)) & (~csv_file["cropped_image_file"].isna()) & (csv_file["#channels"]>3) & (csv_file["#nucs_predicted"]==-1)]
 
 if df_embryos_to_predict.empty:
     logging.exception("No embryos to predict stage")
@@ -63,11 +62,16 @@ if df_embryos_to_predict.empty:
 x = []
 for i in df_embryos_to_predict.index:
     
-    im = tif.imread(os.path.join(dir_path_final_maxp_dapi ,df_embryos_to_predict.at[i,"cropped_image_file"]))
-    mask = tif.imread(os.path.join(dir_path_finaldata, 'masks' ,df_embryos_to_predict.at[i,"cropped_mask_file"]))
+    im = tif.imread(os.path.join(dir_maxp_dapi, df_embryos_to_predict.at[i,"cropped_image_file"]))
+    mask = tif.imread(os.path.join(dir_mask, df_embryos_to_predict.at[i,"cropped_mask_file"]))
     im[mask==0] = 0
-    
-    x.append(im)
+
+    if np.unique(im).shape[0]>3:
+        x.append(im)
+    else:
+        logging.warning(f'{df_embryos_to_predict.at[i,"cropped_image_file"]} mask is currupt, need to rerun stardist')
+        df_embryos_to_predict = df_embryos_to_predict.drop(i)
+
 
 # Create cropped/pad images - to zoom into the embryos:
 im_size = 400
@@ -96,12 +100,26 @@ for i,im in enumerate(x):
 x_cropped = x_cropped.astype(np.float32)
 
 # Normalize:
+x_cropped_zerotonan = x_cropped.copy()
+x_cropped_zerotonan[x_cropped_zerotonan==0] = np.nan
 
 for i,im in enumerate(x_cropped_zerotonan):
     normed_im = (im-np.nanmin(im)) / (np.nanmax(im)-np.nanmin(im))
     x_cropped_zerotonan[i] = normed_im
     
 x_cropped_normed = np.nan_to_num(x_cropped_zerotonan)
+
+# Resize the data:
+## order ---- 0: Nearest-neighbor, 1: Bi-linear (default)
+def resize_data(data, img_size, order=1):
+    
+    data_rescaled = np.zeros((data.shape[0], img_size, img_size))
+
+    for i,im in enumerate(data):
+        im = resize(im, (img_size, img_size), anti_aliasing=True, mode='constant', order=order)
+        data_rescaled[i] = im
+        
+    return data_rescaled
 
 img_size = 128
 
@@ -120,6 +138,7 @@ for i,df_i in enumerate(df_embryos_to_predict.index):
     csv_file.at[df_i,"#nucs_predicted"] = predicted_vals[i]
 
 csv_file.to_csv(csv_path, index=False)
+os.chmod(csv_path, 0o664)
 
 ############################### Log file output status ################################
 
