@@ -190,7 +190,7 @@ def readND2_saveTIFF(images, output_path, dir_path_maxp_gfp, csv_file):
         logging.warning(f'{exc_type} {exc_tb.tb_lineno}\n')
 
         with open(failing_nd2_list_file,"a+") as f:
-            f.write(f'{images}\n')
+            f.write(f'{os.path.basename(images)}\n')
 
         return csv_file
 

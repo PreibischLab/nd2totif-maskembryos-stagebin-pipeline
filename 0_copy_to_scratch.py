@@ -6,6 +6,7 @@ import logging
 import pandas as pd
 import sys
 import re
+import numpy as np
 
 
 dir_path = '/data/preibisch/Laura_Microscopy/dosage_compensation'
@@ -16,7 +17,7 @@ dir_path_tif = os.path.join(analysis_path, 'tifs')
 
 csv_path = os.path.join(analysis_path, 'embryos_csv', 'embryos.csv')
 
-pipeline_dir = os.path.join('/scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline')
+pipeline_dir = '/scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline'
 
 failing_nd2_list_file1 = os.path.join(pipeline_dir, "failing_nd2toTiff_files.txt")
 failing_nd2_list_file2 = os.path.join(pipeline_dir, "failing_nd2toTiff_files_also_imagej.txt")
@@ -47,6 +48,8 @@ def setup_logger():
 setup_logger()
 
 logging.info("\n\nStarting script move_files_to_scratch\n *********************************************")
+
+##################################################################################
 
 shutil.rmtree(dir_path_new_tif, ignore_errors=True)
 os.makedirs(dir_path_new_tif, mode=0o777) 
@@ -139,8 +142,6 @@ all_processed_files = [(f.split(" "))[0] for f in all_processed_files if isinsta
 with open(failing_nd2_list_file1,"r") as f:
 	all_failed_files1 = f.read().split('\n')
 
-all_failed_files1 = [os.path.basename(f) for f in all_failed_files1]
-
 # Don't take files that failed nd2toTif in the past: 
 with open(failing_nd2_list_file2,"r") as f:
 	all_failed_files2 = f.read().split('\n')
@@ -180,7 +181,7 @@ for idx in missing_gfp_csv.index:
 
 	gfp_ch = missing_gfp_csv.at[idx,"GFP channel"]
 	if gfp_ch!=-1:
-		im_gfp = np.max(im[:,gfp_ch,:,:], axis=0)
+		im_gfp = np.max(im[:,int(gfp_ch),:,:], axis=0)
 		tif.imsave(os.path.join(dir_path_maxp_gfp, filename), im_gfp)
 
 

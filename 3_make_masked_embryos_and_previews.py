@@ -242,6 +242,5 @@ if len(permission_errors)>0:
     logging.warning(f'AY YAY YAY, permission errors: \n {nl.join(permission_errors)}')
 
 logging.info("Finished script, yay!\n ********************************************************************")
-"""
 
 ###########################

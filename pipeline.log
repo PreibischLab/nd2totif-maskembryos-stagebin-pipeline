@@ -33627,3 +33627,5 @@ Loading thresholds from 'thresholds.json'.
 Using default values: prob_thresh=0.764707, nms_thresh=0.3.
 2020-05-14 03:20:35,109 - INFO - 126 - Finished script, yay!
  ********************************************************************
+2020-05-18 23:55:18,525 - INFO - 50 - 
+
