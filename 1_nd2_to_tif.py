@@ -17,7 +17,7 @@ log_file_path = os.path.join(pipeline_dir, 'pipeline.log')
 
 channels_csv_path = os.path.join(pipeline_dir, 'channel_to_channel_type.csv')
 
-failing_nd2_list_file = os.path.join(pipeline_dir, "failing_nd2toTiff_files.txt")
+failing_nd2_list_file = os.path.join(pipeline_dir, "failing_nd2toTiff_files_and_rejected.txt")
 
 csv_path = os.path.join(pipeline_dir, 'embryos.csv')
 
@@ -140,12 +140,18 @@ def readND2_saveTIFF(images, output_path, dir_path_maxp_gfp, csv_file):
 
             # Not analizing if #channels<4:
             if channels_names[3]=="" or "5" in channels_names:
+                logging.info(f'skipping file - missing channels - {images}')
+                with open(failing_nd2_list_file,"a+") as f:
+                    f.write(f'{os.path.basename(images)}\n')
                 return csv_file
 
             dapi_num = get_channel_num(channels_names, 'dapi_andor')
             gfp_num = get_channel_num(channels_names, 'gfp_andor')
 
             if dapi_num==-1 or gfp_num==-1:
+                logging.info(f'skipping file - no dapi/gfp channel - {images}')
+                with open(failing_nd2_list_file,"a+") as f:
+                    f.write(f'{os.path.basename(images)}\n')
                 return csv_file
 
             condition = os.path.basename(images).split("_")[1].upper() if "rnai" not in images else f'RNAi_{os.path.basename(images).split("_")[2][5:]}'

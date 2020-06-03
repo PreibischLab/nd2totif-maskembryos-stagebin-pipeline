@@ -9,7 +9,7 @@
 # neccessary to prevent python error 
 export OPENBLAS_NUM_THREADS=4
 # export NUM_THREADS=8
-python 1_nd2_to_tif.py 2>&1 |  tee -a pipeline.log
+#python 1_nd2_to_tif.py 2>&1 |  tee -a pipeline.log
 #singularity run conda.simg python 2_stardist_predict.py  2>&1 |  tee -a pipeline.log
 #python 3_make_masked_embryos_and_previews.py 2>&1 |  tee -a pipeline.log
-#python 4_stage_prediction.py 2>&1 |  tee -a pipeline.log
+python 4_stage_prediction.py 2>&1 |  tee -a pipeline.log

@@ -19,7 +19,7 @@ csv_path = os.path.join(analysis_path, 'embryos_csv', 'embryos.csv')
 
 pipeline_dir = '/scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline'
 
-failing_nd2_list_file1 = os.path.join(pipeline_dir, "failing_nd2toTiff_files.txt")
+failing_nd2_list_file1 = os.path.join(pipeline_dir, "failing_nd2toTiff_files_and_rejected.txt")
 failing_nd2_list_file2 = os.path.join(pipeline_dir, "failing_nd2toTiff_files_also_imagej.txt")
 
 dir_path_new_nd2 = os.path.join(pipeline_dir, 'nd2_temp_files')

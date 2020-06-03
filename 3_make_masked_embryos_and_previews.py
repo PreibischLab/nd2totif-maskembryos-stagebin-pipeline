@@ -48,11 +48,8 @@ os.makedirs(dir_preview, exist_ok=True, mode=0o777)
 shutil.rmtree(dir_path_finaldata, ignore_errors=True)
 os.makedirs(dir_path_finaldata, mode=0o777) 
 
-shutil.rmtree(dir_path_final_tif, ignore_errors=True)
-os.makedirs(dir_path_final_tif, mode=0o777) 
-
-shutil.rmtree(dir_path_final_masks, ignore_errors=True)
-os.makedirs(dir_path_final_masks, mode=0o777) 
+os.makedirs(os.path.join(dir_path_finaldata,'tifs'), mode=0o777) 
+os.makedirs(os.path.join(dir_path_finaldata,'masks'), mode=0o777) 
 
 # Load the predicted images:
 try:
@@ -142,7 +139,6 @@ for i,im_name in enumerate(gfp_images_names):
             csv_file = csv_file.append(im_df, ignore_index=True)
 
         else:
-            # Need to check that thats the correct status 
             csv_file.loc[csv_file["filename"]==im_name, "status"] = -2
          
         csv_file = csv_file.reset_index(drop=True)
@@ -174,8 +170,6 @@ def make_final_tifs_and_preview(im_df, dir_path_tif, dir_path_finaldata, mask_fu
     for i,idx in enumerate(im_df.index):
         end_coords = list(map(int, im_df.at[idx,"ellipse"].split('--')[1:]))
         coords = [int(im_df.at[idx,"crop_offset_y"]), end_coords[0], int(im_df.at[idx,"crop_offset_x"]), end_coords[1]]
-
-        print(coords)
 
         embryo_tif = im[:,:,coords[0]:coords[1],coords[2]:coords[3]]
         tif.imsave(os.path.join(dir_path_finaldata,'tifs',im_df.at[idx,"cropped_image_file"]), embryo_tif)
