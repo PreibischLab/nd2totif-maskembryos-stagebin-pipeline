@@ -19,6 +19,10 @@ data_csv_path = os.path.join(analysis_path, 'embryos_csv', 'embryos.csv')
 dir_path_data_finaldata = os.path.join(analysis_path, "finaldata")
 dir_path_data_preview = os.path.join(analysis_path, "preview_embryos")
 
+dir_path_data_tifs = os.path.join(analysis_path, "tifs")
+
+log_file_path = os.path.join(pipeline_dir, 'pipeline.log')
+
 ######################### Set up log file ###############################
 
 def setup_logger():
@@ -62,6 +66,24 @@ for i,n in enumerate(tifs_names):
 
 	else:
 		logging.warning(f'{n} is already in data, double name')
+
+
+## Copy original tifs (from nd2 before cropping:
+org_tifs_scratch_paths = glob(os.path.join(dir_path_scratch_finaldata, 'tifs', '*'))
+
+all_org_old_tifs_names = [os.path.basename(f) for f in glob(os.path.join(dir_path_data_tifs, '*'))]
+
+tifs_names = [os.path.basename(f) for f in org_tifs_scratch_paths]
+
+for i,n in enumerate(tifs_names):
+	if n not in all_org_old_tifs_names:
+
+		shutil.copyfile(org_tifs_scratch_paths[i], os.path.join(dir_path_data_tifs, n))
+		os.chmod(os.path.join(dir_path_data_tifs, n), 0o664)
+
+	else:
+		logging.warning(f'{n} is already in data, double name')
+
 
 shutil.rmtree(dir_path_new_tif, ignore_errors=True)
 shutil.rmtree(dir_path_new_nd2, ignore_errors=True)
