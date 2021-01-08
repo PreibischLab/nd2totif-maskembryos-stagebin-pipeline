@@ -34033,3 +34033,944 @@ INFO:root:Finished script, yay!
  ********************************************************************
 2020-05-28 01:31:29,721 - INFO - 153 - Finished script, yay!
  ********************************************************************
+2021-01-07 18:35:56,273 - INFO - 50 - 
+
+Starting script move_files_to_scratch
+ *********************************************
+2021-01-07 18:36:01,357 - INFO - 104 - number of nd2 files before deleting duplicates: 5096
+2021-01-07 18:36:09,380 - INFO - 129 - number of nd2 files after deleting duplicates: 785
+2021-01-07 18:36:09,545 - INFO - 156 - number of new nd2 files: 25
+2021-01-07 18:41:06,591 - INFO - 50 - 
+
+Starting script move_files_to_scratch
+ *********************************************
+2021-01-07 18:41:07,485 - INFO - 104 - number of nd2 files before deleting duplicates: 5096
+2021-01-07 18:41:15,247 - INFO - 129 - number of nd2 files after deleting duplicates: 785
+2021-01-07 18:41:15,403 - INFO - 156 - number of new nd2 files: 25
+2021-01-07 19:37:18,306 - INFO - 171 - Creating gpf max projections for any image with status -1
+2021-01-07 19:37:18,350 - INFO - 198 - Finished script, yay!
+ ********************************************************************
+2021-01-07 19:37:40,665 - INFO - 46 - 
+
+Starting script nd2_to_tif
+ *********************************************
+2021-01-07 19:37:59,907 - INFO - 187 - success nd2_to_tif 200623_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_003 series1
+2021-01-07 19:38:21,978 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.rluc_dpy23.ex_mdh1.ex_dpy23.int_001 series1
+2021-01-07 19:38:38,210 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.rluc_dpy23.ex_mdh1.ex_dpy23.int_001 series2
+2021-01-07 19:38:54,665 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.rluc_dpy23.ex_mdh1.ex_dpy23.int_001 series3
+2021-01-07 19:39:11,714 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.rluc_dpy23.ex_mdh1.ex_dpy23.int_001 series4
+2021-01-07 19:39:28,395 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.rluc_dpy23.ex_mdh1.ex_dpy23.int_001 series5
+2021-01-07 19:39:44,395 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.rluc_dpy23.ex_mdh1.ex_dpy23.int_001 series6
+2021-01-07 19:40:00,215 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.rluc_dpy23.ex_mdh1.ex_dpy23.int_001 series7
+2021-01-07 19:40:15,352 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.rluc_dpy23.ex_mdh1.ex_dpy23.int_001 series8
+2021-01-07 19:40:32,571 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.rluc_dpy23.ex_mdh1.ex_dpy23.int_001 series9
+2021-01-07 19:40:45,830 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.rluc_dpy23.ex_mdh1.ex_dpy23.int_001 series10
+2021-01-07 19:41:03,787 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.rluc_dpy23.ex_mdh1.ex_dpy23.int_001 series11
+2021-01-07 19:41:11,608 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.rluc_dpy23.ex_mdh1.ex_dpy23.int_001 series12
+2021-01-07 19:41:22,314 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.rluc_dpy23.ex_mdh1.ex_dpy23.int_001 series13
+2021-01-07 19:41:33,445 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.rluc_dpy23.ex_mdh1.ex_dpy23.int_001 series14
+2021-01-07 19:41:54,087 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.rluc_dpy23.ex_mdh1.ex_dpy23.int_001 series15
+2021-01-07 19:42:10,920 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.rluc_dpy23.ex_mdh1.ex_dpy23.int_001 series16
+2021-01-07 19:42:27,168 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.rluc_dpy23.ex_mdh1.ex_dpy23.int_001 series17
+2021-01-07 19:42:44,462 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.rluc_dpy23.ex_mdh1.ex_dpy23.int_001 series18
+2021-01-07 19:42:54,456 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.rluc_dpy23.ex_mdh1.ex_dpy23.int_001 series19
+2021-01-07 19:43:05,336 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.rluc_dpy23.ex_mdh1.ex_dpy23.int_001 series20
+2021-01-07 19:43:16,599 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.rluc_dpy23.ex_mdh1.ex_dpy23.int_001 series21
+2021-01-07 19:43:28,024 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.rluc_dpy23.ex_mdh1.ex_dpy23.int_001 series22
+2021-01-07 19:43:39,350 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.rluc_dpy23.ex_mdh1.ex_dpy23.int_001 series23
+2021-01-07 19:43:56,930 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.rluc_dpy23.ex_mdh1.ex_dpy23.int_001 series24
+2021-01-07 19:44:13,983 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.rluc_dpy23.ex_mdh1.ex_dpy23.int_001 series25
+2021-01-07 19:44:29,094 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.rluc_dpy23.ex_mdh1.ex_dpy23.int_001 series26
+2021-01-07 19:44:42,443 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.rluc_dpy23.ex_mdh1.ex_dpy23.int_001 series27
+2021-01-07 19:44:58,695 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.rluc_dpy23.ex_mdh1.ex_dpy23.int_001 series28
+2021-01-07 19:45:14,795 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.rluc_dpy23.ex_mdh1.ex_dpy23.int_001 series29
+2021-01-07 19:45:31,487 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.rluc_dpy23.ex_mdh1.ex_dpy23.int_001 series30
+2021-01-07 19:45:49,397 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.rluc_dpy23.ex_mdh1.ex_dpy23.int_001 series31
+2021-01-07 19:46:06,329 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.rluc_dpy23.ex_mdh1.ex_dpy23.int_001 series32
+2021-01-07 19:46:24,411 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.rluc_dpy23.ex_mdh1.ex_dpy23.int_001 series33
+2021-01-07 19:46:41,030 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.rluc_dpy23.ex_mdh1.ex_dpy23.int_001 series34
+2021-01-07 19:46:58,136 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.rluc_dpy23.ex_mdh1.ex_dpy23.int_001 series35
+2021-01-07 19:47:14,810 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.rluc_dpy23.ex_mdh1.ex_dpy23.int_001 series36
+2021-01-07 19:47:25,811 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.rluc_dpy23.ex_mdh1.ex_dpy23.int_001 series37
+2021-01-07 19:47:41,768 - INFO - 187 - success nd2_to_tif 200923_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_001 series1
+2021-01-07 19:48:08,696 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.dpy27_dpy23.ex_mdh1.ex_dpy23.int_005 series1
+2021-01-07 19:48:26,784 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.dpy27_dpy23.ex_mdh1.ex_dpy23.int_005 series2
+2021-01-07 19:48:44,105 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.dpy27_dpy23.ex_mdh1.ex_dpy23.int_005 series3
+2021-01-07 19:49:00,907 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.dpy27_dpy23.ex_mdh1.ex_dpy23.int_005 series4
+2021-01-07 19:49:17,158 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.dpy27_dpy23.ex_mdh1.ex_dpy23.int_005 series5
+2021-01-07 19:49:35,234 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.dpy27_dpy23.ex_mdh1.ex_dpy23.int_005 series6
+2021-01-07 19:49:51,645 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.dpy27_dpy23.ex_mdh1.ex_dpy23.int_005 series7
+2021-01-07 19:50:09,760 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.dpy27_dpy23.ex_mdh1.ex_dpy23.int_005 series8
+2021-01-07 19:50:26,943 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.dpy27_dpy23.ex_mdh1.ex_dpy23.int_005 series9
+2021-01-07 19:50:45,514 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.dpy27_dpy23.ex_mdh1.ex_dpy23.int_005 series10
+2021-01-07 19:51:00,067 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.dpy27_dpy23.ex_mdh1.ex_dpy23.int_005 series11
+2021-01-07 19:51:13,841 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.dpy27_dpy23.ex_mdh1.ex_dpy23.int_005 series12
+2021-01-07 19:51:31,691 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.dpy27_dpy23.ex_mdh1.ex_dpy23.int_005 series13
+2021-01-07 19:51:47,831 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.dpy27_dpy23.ex_mdh1.ex_dpy23.int_005 series14
+2021-01-07 19:52:04,269 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.dpy27_dpy23.ex_mdh1.ex_dpy23.int_005 series15
+2021-01-07 19:52:15,541 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.dpy27_dpy23.ex_mdh1.ex_dpy23.int_005 series16
+2021-01-07 19:52:29,946 - INFO - 187 - success nd2_to_tif 210103_cb428_dpy23.ex_mdh1.ex_dpy23.int_004 series1
+2021-01-07 19:53:05,060 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_005 series1
+2021-01-07 19:53:22,167 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_005 series2
+2021-01-07 19:53:35,624 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_005 series3
+2021-01-07 19:53:50,198 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_005 series4
+2021-01-07 19:54:06,132 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_005 series5
+2021-01-07 19:54:20,852 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_005 series6
+2021-01-07 19:54:36,459 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_005 series7
+2021-01-07 19:54:54,100 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_005 series8
+2021-01-07 19:55:09,992 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_005 series9
+2021-01-07 19:55:25,141 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_005 series10
+2021-01-07 19:55:44,081 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_005 series11
+2021-01-07 19:56:02,069 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_005 series12
+2021-01-07 19:56:19,645 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_005 series13
+2021-01-07 19:56:37,106 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_005 series14
+2021-01-07 19:56:55,153 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_005 series15
+2021-01-07 19:57:12,514 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_005 series16
+2021-01-07 19:57:26,561 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_005 series17
+2021-01-07 19:57:38,666 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_005 series18
+2021-01-07 19:57:51,733 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_005 series19
+2021-01-07 19:58:09,992 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_005 series20
+2021-01-07 19:58:22,012 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_005 series21
+2021-01-07 19:58:36,341 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.dpy27_dpy23.ex_mdh1.ex_dpy23.int_001 series1
+2021-01-07 19:59:01,536 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.dpy27_dpy23.ex_mdh1.ex_dpy23.int_003 series1
+2021-01-07 19:59:13,066 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.dpy27_dpy23.ex_mdh1.ex_dpy23.int_003 series2
+2021-01-07 19:59:26,258 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.dpy27_dpy23.ex_mdh1.ex_dpy23.int_003 series3
+2021-01-07 19:59:40,214 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.dpy27_dpy23.ex_mdh1.ex_dpy23.int_003 series4
+/home/ebahry/miniconda3/lib/python3.7/site-packages/pims/base_frames.py:522: UserWarning: Please call FramesSequenceND.__init__() at the start of thethe reader initialization.
+  warn("Please call FramesSequenceND.__init__() at the start of the"
+1_nd2_to_tif.py:180: FutureWarning: Sorting because non-concatenation axis is not aligned. A future version
+of pandas will change to not sort by default.
+
+To accept the future behavior, pass 'sort=False'.
+
+To retain the current behavior and silence the warning, pass 'sort=True'.
+
+  csv_file = pd.concat([csv_file, df])
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/RNAi_rluc_685.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/RNAi_rluc_686.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/RNAi_rluc_687.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/RNAi_rluc_688.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/RNAi_rluc_700.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/RNAi_rluc_701.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/RNAi_rluc_707.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/RNAi_dpy27_2602.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/RNAi_dpy27_2603.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_864.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3475.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3476.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3477.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3478.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3479.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3481.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3483.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3484.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3490.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3492.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3493.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3494.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3495.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/RNAi_dpy27_2609.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/RNAi_dpy27_2610.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/RNAi_dpy27_2611.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/RNAi_dpy27_2612.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/RNAi_dpy27_2613.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/RNAi_dpy27_2614.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+2021-01-07 19:59:57,160 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.dpy27_dpy23.ex_mdh1.ex_dpy23.int_003 series5
+2021-01-07 20:00:14,389 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.dpy27_dpy23.ex_mdh1.ex_dpy23.int_003 series6
+2021-01-07 20:00:31,534 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.dpy27_dpy23.ex_mdh1.ex_dpy23.int_003 series7
+2021-01-07 20:00:49,261 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.dpy27_dpy23.ex_mdh1.ex_dpy23.int_003 series8
+2021-01-07 20:01:02,075 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.dpy27_dpy23.ex_mdh1.ex_dpy23.int_003 series9
+2021-01-07 20:01:26,256 - INFO - 187 - success nd2_to_tif 210103_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series1
+2021-01-07 20:01:45,477 - INFO - 187 - success nd2_to_tif 210103_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series2
+2021-01-07 20:02:03,846 - INFO - 187 - success nd2_to_tif 210103_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series3
+2021-01-07 20:02:24,424 - INFO - 187 - success nd2_to_tif 210103_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series4
+2021-01-07 20:02:39,657 - INFO - 187 - success nd2_to_tif 210103_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series5
+2021-01-07 20:02:56,310 - INFO - 187 - success nd2_to_tif 210103_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series6
+2021-01-07 20:03:14,554 - INFO - 187 - success nd2_to_tif 210103_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series7
+2021-01-07 20:03:31,439 - INFO - 187 - success nd2_to_tif 210103_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series8
+2021-01-07 20:03:47,872 - INFO - 187 - success nd2_to_tif 210103_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series9
+2021-01-07 20:04:06,019 - INFO - 187 - success nd2_to_tif 210103_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series10
+2021-01-07 20:04:21,744 - INFO - 187 - success nd2_to_tif 210103_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series11
+2021-01-07 20:04:40,930 - INFO - 187 - success nd2_to_tif 210103_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series12
+2021-01-07 20:04:59,926 - INFO - 187 - success nd2_to_tif 210103_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series13
+2021-01-07 20:05:17,646 - INFO - 187 - success nd2_to_tif 210103_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series14
+2021-01-07 20:05:35,995 - INFO - 187 - success nd2_to_tif 210103_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series15
+2021-01-07 20:05:52,188 - INFO - 187 - success nd2_to_tif 210103_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series16
+2021-01-07 20:06:09,394 - INFO - 187 - success nd2_to_tif 210103_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series17
+2021-01-07 20:06:27,925 - INFO - 187 - success nd2_to_tif 210103_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series18
+2021-01-07 20:06:45,846 - INFO - 187 - success nd2_to_tif 210103_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series19
+2021-01-07 20:07:03,610 - INFO - 187 - success nd2_to_tif 210103_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series20
+2021-01-07 20:07:22,442 - INFO - 187 - success nd2_to_tif 210103_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series21
+2021-01-07 20:07:39,201 - INFO - 187 - success nd2_to_tif 210103_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series22
+2021-01-07 20:07:56,725 - INFO - 187 - success nd2_to_tif 210103_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series23
+2021-01-07 20:08:14,782 - INFO - 187 - success nd2_to_tif 210103_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series24
+2021-01-07 20:08:32,407 - INFO - 187 - success nd2_to_tif 210103_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series25
+2021-01-07 20:08:50,137 - INFO - 187 - success nd2_to_tif 210103_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series26
+2021-01-07 20:09:07,307 - INFO - 187 - success nd2_to_tif 210103_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series27
+2021-01-07 20:09:24,389 - INFO - 187 - success nd2_to_tif 210103_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series28
+2021-01-07 20:09:40,366 - INFO - 187 - success nd2_to_tif 210103_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series29
+2021-01-07 20:09:57,334 - INFO - 187 - success nd2_to_tif 210103_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series30
+2021-01-07 20:10:12,952 - INFO - 187 - success nd2_to_tif 210103_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series31
+2021-01-07 20:10:30,027 - INFO - 187 - success nd2_to_tif 210103_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series32
+2021-01-07 20:10:47,524 - INFO - 187 - success nd2_to_tif 210103_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series33
+2021-01-07 20:11:04,992 - INFO - 187 - success nd2_to_tif 210103_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series34
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/RNAi_dpy27_2615.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/RNAi_dpy27_2617.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/RNAi_dpy27_2618.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_865.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_866.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_868.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_870.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_872.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_873.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_875.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_876.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_877.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_878.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_879.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_881.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_882.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_883.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_884.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_887.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_888.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_889.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_890.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_891.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_892.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_893.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_894.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_895.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_896.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_897.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_898.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_899.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+2021-01-07 20:11:22,416 - INFO - 187 - success nd2_to_tif 210103_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series35
+2021-01-07 20:11:39,433 - INFO - 187 - success nd2_to_tif 210103_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series36
+2021-01-07 20:11:55,231 - INFO - 187 - success nd2_to_tif 210103_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series37
+2021-01-07 20:12:05,652 - INFO - 187 - success nd2_to_tif 210103_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series38
+2021-01-07 20:12:18,228 - INFO - 187 - success nd2_to_tif 210103_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series39
+2021-01-07 20:12:33,462 - INFO - 187 - success nd2_to_tif 210103_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series40
+2021-01-07 20:12:46,179 - INFO - 187 - success nd2_to_tif 210103_cb428_dpy23.ex_mdh1.ex_dpy23.int_003 series41
+2021-01-07 20:13:02,483 - INFO - 187 - success nd2_to_tif 210103_cb428_dpy23.ex_mdh1.ex_dpy23.int_001 series1
+2021-01-07 20:13:28,647 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.dpy27_dpy23.ex_mdh1.ex_dpy23.int_004 series1
+2021-01-07 20:13:46,451 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.dpy27_dpy23.ex_mdh1.ex_dpy23.int_004 series2
+2021-01-07 20:14:04,459 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.dpy27_dpy23.ex_mdh1.ex_dpy23.int_004 series3
+2021-01-07 20:14:21,050 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.dpy27_dpy23.ex_mdh1.ex_dpy23.int_004 series4
+2021-01-07 20:14:39,338 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.dpy27_dpy23.ex_mdh1.ex_dpy23.int_004 series5
+2021-01-07 20:14:55,807 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.dpy27_dpy23.ex_mdh1.ex_dpy23.int_004 series6
+2021-01-07 20:15:07,781 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.dpy27_dpy23.ex_mdh1.ex_dpy23.int_004 series7
+2021-01-07 20:15:30,424 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_003 series1
+2021-01-07 20:15:47,952 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_003 series2
+2021-01-07 20:16:04,842 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_003 series3
+2021-01-07 20:16:19,547 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_003 series4
+2021-01-07 20:16:36,160 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_003 series5
+2021-01-07 20:16:54,522 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_003 series6
+2021-01-07 20:17:11,794 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_003 series7
+2021-01-07 20:17:28,636 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_003 series8
+2021-01-07 20:17:44,866 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_003 series9
+2021-01-07 20:17:57,376 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_003 series10
+2021-01-07 20:18:06,801 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_003 series11
+2021-01-07 20:18:24,496 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_003 series12
+2021-01-07 20:18:32,427 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_003 series13
+2021-01-07 20:18:45,631 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_003 series14
+2021-01-07 20:19:01,939 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_003 series15
+2021-01-07 20:19:20,311 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_003 series16
+2021-01-07 20:19:37,483 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_003 series17
+2021-01-07 20:19:54,354 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_003 series18
+2021-01-07 20:20:12,154 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_003 series19
+2021-01-07 20:20:24,803 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_003 series20
+2021-01-07 20:20:40,022 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_003 series21
+2021-01-07 20:20:59,248 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_003 series22
+2021-01-07 20:21:15,380 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_003 series23
+2021-01-07 20:21:33,000 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_003 series24
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_900.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_901.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_902.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_903.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_904.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_905.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/RNAi_dpy27_2619.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/RNAi_dpy27_2621.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3496.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3497.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3498.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3499.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3500.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3501.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3502.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3503.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3504.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3505.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3506.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3508.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3509.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3510.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3511.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3512.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3513.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3514.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3515.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3516.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3517.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3518.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3519.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3520.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+2021-01-07 20:21:50,251 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_003 series25
+2021-01-07 20:22:07,845 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_003 series26
+2021-01-07 20:22:26,192 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_003 series27
+2021-01-07 20:22:42,400 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_003 series28
+2021-01-07 20:22:58,314 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_003 series29
+2021-01-07 20:23:16,114 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_003 series30
+2021-01-07 20:23:27,339 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_003 series31
+2021-01-07 20:23:42,781 - INFO - 187 - success nd2_to_tif 200623_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_002 series1
+2021-01-07 20:24:18,093 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.ev_dpy23.ex_mdh1.ex_dpy23.int_001 series1
+2021-01-07 20:24:29,214 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.ev_dpy23.ex_mdh1.ex_dpy23.int_001 series2
+2021-01-07 20:24:47,555 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.ev_dpy23.ex_mdh1.ex_dpy23.int_001 series3
+2021-01-07 20:25:01,405 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.ev_dpy23.ex_mdh1.ex_dpy23.int_001 series4
+2021-01-07 20:25:15,642 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.ev_dpy23.ex_mdh1.ex_dpy23.int_001 series5
+2021-01-07 20:25:32,893 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.ev_dpy23.ex_mdh1.ex_dpy23.int_001 series6
+2021-01-07 20:25:50,347 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.ev_dpy23.ex_mdh1.ex_dpy23.int_001 series7
+2021-01-07 20:26:06,343 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.ev_dpy23.ex_mdh1.ex_dpy23.int_001 series8
+2021-01-07 20:26:22,021 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.ev_dpy23.ex_mdh1.ex_dpy23.int_001 series9
+2021-01-07 20:26:32,526 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.ev_dpy23.ex_mdh1.ex_dpy23.int_001 series10
+2021-01-07 20:26:50,929 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.ev_dpy23.ex_mdh1.ex_dpy23.int_001 series11
+2021-01-07 20:27:07,369 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.ev_dpy23.ex_mdh1.ex_dpy23.int_001 series12
+2021-01-07 20:27:21,222 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.ev_dpy23.ex_mdh1.ex_dpy23.int_001 series13
+2021-01-07 20:27:35,700 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.ev_dpy23.ex_mdh1.ex_dpy23.int_001 series14
+2021-01-07 20:27:54,265 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.ev_dpy23.ex_mdh1.ex_dpy23.int_001 series15
+2021-01-07 20:28:02,821 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.ev_dpy23.ex_mdh1.ex_dpy23.int_001 series16
+2021-01-07 20:28:27,826 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.dpy27_dpy23.ex_mdh1.ex_dpy23.int_002 series1
+2021-01-07 20:28:42,247 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.dpy27_dpy23.ex_mdh1.ex_dpy23.int_002 series2
+2021-01-07 20:28:52,580 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.dpy27_dpy23.ex_mdh1.ex_dpy23.int_002 series3
+2021-01-07 20:29:05,321 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.dpy27_dpy23.ex_mdh1.ex_dpy23.int_002 series4
+2021-01-07 20:29:20,451 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.dpy27_dpy23.ex_mdh1.ex_dpy23.int_002 series5
+2021-01-07 20:29:27,423 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.dpy27_dpy23.ex_mdh1.ex_dpy23.int_002 series6
+2021-01-07 20:29:41,492 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.dpy27_dpy23.ex_mdh1.ex_dpy23.int_002 series7
+2021-01-07 20:29:49,709 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.dpy27_dpy23.ex_mdh1.ex_dpy23.int_002 series8
+2021-01-07 20:30:00,403 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.dpy27_dpy23.ex_mdh1.ex_dpy23.int_002 series9
+2021-01-07 20:30:20,265 - INFO - 187 - success nd2_to_tif 200623_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_004 series1
+2021-01-07 20:30:38,241 - INFO - 187 - success nd2_to_tif 200623_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_006 series1
+2021-01-07 20:30:59,512 - INFO - 187 - success nd2_to_tif 200929_n2_rnai.dpy27_dpy23.ex_mdh1.ex_dpy23.int_001 series1
+2021-01-07 20:31:11,072 - INFO - 187 - success nd2_to_tif 200623_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_005 series1
+2021-01-07 20:31:41,816 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.dpy27_dpy23.ex_mdh1.ex_dpy23.int_006 series1
+2021-01-07 20:31:56,174 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.dpy27_dpy23.ex_mdh1.ex_dpy23.int_006 series2
+2021-01-07 20:32:11,184 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.dpy27_dpy23.ex_mdh1.ex_dpy23.int_006 series3
+2021-01-07 20:32:28,896 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.dpy27_dpy23.ex_mdh1.ex_dpy23.int_006 series4
+2021-01-07 20:32:46,092 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.dpy27_dpy23.ex_mdh1.ex_dpy23.int_006 series5
+2021-01-07 20:32:59,405 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.dpy27_dpy23.ex_mdh1.ex_dpy23.int_006 series6
+2021-01-07 20:33:09,762 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.dpy27_dpy23.ex_mdh1.ex_dpy23.int_006 series7
+2021-01-07 20:33:20,134 - INFO - 187 - success nd2_to_tif 201021_n2_rnai.dpy27_dpy23.ex_mdh1.ex_dpy23.int_006 series8
+2021-01-07 20:33:48,363 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_002 series1
+2021-01-07 20:33:56,728 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_002 series2
+2021-01-07 20:34:10,808 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_002 series3
+2021-01-07 20:34:23,073 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_002 series4
+2021-01-07 20:34:35,452 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_002 series5
+2021-01-07 20:34:49,825 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_002 series6
+2021-01-07 20:35:06,298 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_002 series7
+2021-01-07 20:35:17,729 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_002 series8
+2021-01-07 20:35:33,914 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_002 series9
+2021-01-07 20:35:50,877 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_002 series10
+2021-01-07 20:36:08,526 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_002 series11
+2021-01-07 20:36:23,274 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_002 series12
+2021-01-07 20:36:41,284 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_002 series13
+2021-01-07 20:36:58,549 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_002 series14
+2021-01-07 20:37:15,164 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_002 series15
+2021-01-07 20:37:29,775 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_002 series16
+2021-01-07 20:37:48,406 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_002 series17
+2021-01-07 20:38:04,449 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_002 series18
+2021-01-07 20:38:21,824 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_002 series19
+2021-01-07 20:38:40,004 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_002 series20
+2021-01-07 20:38:57,402 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_002 series21
+2021-01-07 20:39:11,111 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_002 series22
+2021-01-07 20:39:27,522 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_002 series23
+2021-01-07 20:39:40,032 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_002 series24
+2021-01-07 20:39:50,630 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_002 series25
+2021-01-07 20:40:09,642 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_001 series1
+2021-01-07 20:40:28,807 - INFO - 187 - success nd2_to_tif 200623_n2_rnai.dpy27_dpy23.ex_ama1.ex_dpy23.int_001 series1
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3521.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3522.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3523.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3524.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3525.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/RNAi_ev_1.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/RNAi_ev_4.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/RNAi_ev_12.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/RNAi_ev_14.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/RNAi_ev_15.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/RNAi_dpy27_2627.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/RNAi_dpy27_2628.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/RNAi_dpy27_2629.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/RNAi_dpy27_2630.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/RNAi_dpy27_2632.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/RNAi_dpy27_2635.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/RNAi_dpy27_2636.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/RNAi_dpy27_2638.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/RNAi_dpy27_2642.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3527.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3528.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3533.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3534.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3535.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3538.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3539.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3541.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3542.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3547.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3551.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3553.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+2021-01-07 20:40:59,038 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_004 series1
+2021-01-07 20:41:15,026 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_004 series2
+2021-01-07 20:41:28,443 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_004 series3
+2021-01-07 20:41:43,777 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_004 series4
+2021-01-07 20:41:59,192 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_004 series5
+2021-01-07 20:42:12,969 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_004 series6
+2021-01-07 20:42:29,999 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_004 series7
+2021-01-07 20:42:47,344 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_004 series8
+2021-01-07 20:43:03,917 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_004 series9
+2021-01-07 20:43:19,792 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_004 series10
+2021-01-07 20:43:38,477 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_004 series11
+2021-01-07 20:43:55,688 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_004 series12
+2021-01-07 20:44:12,014 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_004 series13
+2021-01-07 20:44:30,217 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_004 series14
+2021-01-07 20:44:47,596 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_004 series15
+2021-01-07 20:45:04,390 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_004 series16
+2021-01-07 20:45:22,616 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_004 series17
+2021-01-07 20:45:39,333 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_004 series18
+2021-01-07 20:45:55,914 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_004 series19
+2021-01-07 20:46:13,388 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_004 series20
+2021-01-07 20:46:29,085 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_004 series21
+2021-01-07 20:46:46,819 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_004 series22
+2021-01-07 20:47:03,996 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_004 series23
+2021-01-07 20:47:21,849 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_004 series24
+2021-01-07 20:47:38,676 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_004 series25
+2021-01-07 20:47:56,923 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_004 series26
+2021-01-07 20:48:12,774 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_004 series27
+2021-01-07 20:48:30,635 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_004 series28
+2021-01-07 20:48:46,921 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_004 series29
+2021-01-07 20:49:03,962 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_004 series30
+2021-01-07 20:49:20,965 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_004 series31
+2021-01-07 20:49:38,397 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_004 series32
+2021-01-07 20:49:54,969 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_004 series33
+2021-01-07 20:50:11,696 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_004 series34
+2021-01-07 20:50:29,999 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_004 series35
+2021-01-07 20:50:46,851 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_004 series36
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3554.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3555.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3556.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3557.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3558.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3559.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3560.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3561.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3562.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3563.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3564.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3566.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3567.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3568.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3569.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3570.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3571.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3572.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3573.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3575.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3576.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3577.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3578.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3580.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3581.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3582.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3583.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3585.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3586.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3587.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3588.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3589.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+2021-01-07 20:51:02,280 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_004 series37
+2021-01-07 20:51:18,839 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_004 series38
+2021-01-07 20:51:30,424 - INFO - 187 - success nd2_to_tif 201216_n2_dpy23.ex_mdh1.ex_dpy23.int_004 series39
+2021-01-07 20:51:53,192 - INFO - 187 - success nd2_to_tif 210103_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series1
+2021-01-07 20:52:09,953 - INFO - 187 - success nd2_to_tif 210103_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series2
+2021-01-07 20:52:28,336 - INFO - 187 - success nd2_to_tif 210103_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series3
+2021-01-07 20:52:42,541 - INFO - 187 - success nd2_to_tif 210103_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series4
+2021-01-07 20:52:58,742 - INFO - 187 - success nd2_to_tif 210103_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series5
+2021-01-07 20:53:12,996 - INFO - 187 - success nd2_to_tif 210103_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series6
+2021-01-07 20:53:23,849 - INFO - 187 - success nd2_to_tif 210103_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series7
+2021-01-07 20:53:38,254 - INFO - 187 - success nd2_to_tif 210103_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series8
+2021-01-07 20:53:57,502 - INFO - 187 - success nd2_to_tif 210103_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series9
+2021-01-07 20:54:10,184 - INFO - 187 - success nd2_to_tif 210103_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series10
+2021-01-07 20:54:31,022 - INFO - 187 - success nd2_to_tif 210103_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series11
+2021-01-07 20:54:41,395 - INFO - 187 - success nd2_to_tif 210103_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series12
+2021-01-07 20:54:54,005 - INFO - 187 - success nd2_to_tif 210103_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series13
+2021-01-07 20:55:10,836 - INFO - 187 - success nd2_to_tif 210103_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series14
+2021-01-07 20:55:24,120 - INFO - 187 - success nd2_to_tif 210103_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series15
+2021-01-07 20:55:40,709 - INFO - 187 - success nd2_to_tif 210103_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series16
+2021-01-07 20:55:58,450 - INFO - 187 - success nd2_to_tif 210103_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series17
+2021-01-07 20:56:11,421 - INFO - 187 - success nd2_to_tif 210103_cb428_dpy23.ex_mdh1.ex_dpy23.int_002 series18
+2021-01-07 20:56:11,842 - INFO - 214 - Finished nd2 to tif
+2021-01-07 20:56:12,349 - INFO - 226 - Added default values to csv (if new data was processed)
+2021-01-07 20:56:12,681 - INFO - 248 - Added channel types to csv (if new data was processed)
+2021-01-07 20:56:13,056 - INFO - 269 - Corrected lambda values (if needed)
+2021-01-07 20:56:13,060 - INFO - 281 - Finished script, yay!
+ ********************************************************************
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3590.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/N2_3591.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_909.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_913.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_914.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_915.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_916.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_917.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_918.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_919.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_922.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_923.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/maxp_gfp_temp_files/CB428_924.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+2021-01-07 20:56:30,101 - INFO - 46 - 
+
+Starting script stardist_predict
+ *********************************************
+2021-01-07 20:56:51,734 - INFO - 95 - Starting mask predictions
+Using TensorFlow backend.
+/opt/conda/envs/tf_cpu/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:526: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/opt/conda/envs/tf_cpu/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:527: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/opt/conda/envs/tf_cpu/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:528: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/opt/conda/envs/tf_cpu/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:529: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/opt/conda/envs/tf_cpu/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:530: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/opt/conda/envs/tf_cpu/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:535: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+WARNING:tensorflow:From /opt/conda/envs/tf_cpu/lib/python3.6/site-packages/tensorflow/python/ops/resource_variable_ops.py:435: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2021-01-07 20:56:51,768 - WARNING - 323 - From /opt/conda/envs/tf_cpu/lib/python3.6/site-packages/tensorflow/python/ops/resource_variable_ops.py:435: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2021-01-07 20:56:52.343367: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX
+2021-01-07 20:56:52.463663: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2599955000 Hz
+2021-01-07 20:56:52.474070: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x56545d6a0b00 executing computations on platform Host. Devices:
+2021-01-07 20:56:52.474133: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+Loading network weights from 'weights_best.h5'.
+Loading thresholds from 'thresholds.json'.
+Using default values: prob_thresh=0.764707, nms_thresh=0.3.
+2021-01-07 21:00:46,933 - INFO - 126 - Finished script, yay!
+ ********************************************************************
+2021-01-07 21:00:53,668 - INFO - 42 - 
+
+Starting script make_masked_embryos_and_previews
+ *********************************************
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/RNAi_dpy27_2644_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/CB428_890_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/CB428_887_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/RNAi_rluc_695_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/RNAi_rluc_695_cropped_1.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/RNAi_dpy27_2611_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/CB428_907_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/RNAi_rluc_715_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/RNAi_ev_15_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/N2_3495_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/N2_3571_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/RNAi_rluc_711_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/N2_3478_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/RNAi_rluc_698_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/N2_3484_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/RNAi_rluc_718_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/N2_3480_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/RNAi_dpy27_2606_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/RNAi_dpy27_2629_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/RNAi_dpy27_2593_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/RNAi_dpy27_2640_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/RNAi_dpy27_2607_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/CB428_875_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/N2_3530_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/N2_3493_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/N2_3556_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/RNAi_ev_12_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/CB428_921_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/CB428_900_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/N2_3553_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/N2_3553_cropped_1.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/CB428_914_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/N2_3488_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/CB428_893_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/CB428_904_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/RNAi_rluc_716_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/N2_3587_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/N2_3577_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/CB428_866_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/RNAi_dpy27_2620_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/RNAi_dpy27_2647_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/RNAi_dpy27_2627_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/CB428_876_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/N2_3489_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/N2_3489_cropped_1.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/CB428_889_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/CB428_901_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/CB428_917_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/N2_3498_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/CB428_913_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/RNAi_dpy27_2594_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/RNAi_dpy27_2622_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/CB428_877_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/CB428_903_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/CB428_880_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/CB428_918_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/RNAi_ev_3_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/CB428_906_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/CB428_873_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/CB428_883_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/RNAi_ev_14_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/RNAi_dpy27_2630_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/RNAi_dpy27_2619_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/RNAi_ev_2_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/RNAi_rluc_691_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/N2_3491_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/N2_3485_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/CB428_888_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/RNAi_dpy27_2621_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/CB428_867_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/RNAi_dpy27_2601_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/RNAi_dpy27_2592_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/N2_3580_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/RNAi_dpy27_2616_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/N2_3574_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/N2_3581_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/CB428_884_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/RNAi_dpy27_2643_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/N2_3579_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/N2_3554_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/N2_3589_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/CB428_897_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/N2_3566_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/CB428_899_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/RNAi_dpy27_2608_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/N2_3487_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/N2_3475_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/RNAi_dpy27_2635_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/RNAi_rluc_703_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/RNAi_dpy27_2596_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/N2_3583_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/RNAi_rluc_690_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/RNAi_rluc_690_cropped_1.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+2021-01-07 21:57:40,001 - INFO - 238 - Finished script, yay!
+ ********************************************************************
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/RNAi_dpy27_2600_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/RNAi_rluc_699_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/RNAi_rluc_697_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/CB428_878_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/CB428_891_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/RNAi_dpy27_2625_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/N2_3572_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/RNAi_rluc_689_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/RNAi_rluc_689_cropped_1.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/N2_3543_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/RNAi_dpy27_2623_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/RNAi_dpy27_2623_cropped_1.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/RNAi_dpy27_2623_cropped_2.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/N2_3588_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/RNAi_dpy27_2624_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/CB428_919_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/N2_3567_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/RNAi_dpy27_2610_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/RNAi_dpy27_2641_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/N2_3573_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/RNAi_rluc_685_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/RNAi_dpy27_2634_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/N2_3537_cropped_1.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/CB428_924_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/RNAi_rluc_702_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/RNAi_rluc_702_cropped_1.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)
+/home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/CB428_895_cropped_0.tif is a low contrast image
+  warn('%s is a low contrast image' % fname)

@@ -78,12 +78,12 @@ X = np.asarray(X)
 
 # Resize the data:
 ## order ---- 0: Nearest-neighbor, 1: Bi-linear (default)
-def resize_data(data, img_size, order=1):
+def resize_data(data, img_size, anti_aliasing=True, order=1):
     
     data_rescaled = np.zeros((data.shape[0], img_size, img_size))
 
     for i,im in enumerate(data):
-        im = resize(im, (img_size, img_size), anti_aliasing=True, mode='constant', order=order)
+        im = resize(im, (img_size, img_size), anti_aliasing=anti_aliasing, mode='constant', order=order)
         data_rescaled[i] = im
         
     return data_rescaled
@@ -104,7 +104,7 @@ for x in X:
 
 img_size = 1024
 Y = np.asarray(Y)
-labels_images = resize_data(Y, img_size, order=0)
+labels_images = resize_data(Y, img_size, anti_aliasing=False, order=0)
 
 # Save the predictions:
 np.savez(predicted_npz_path, np.asarray(labels_images), np.asarray(gfp_images_names))
