@@ -34974,3 +34974,588 @@ Starting script make_masked_embryos_and_previews
   warn('%s is a low contrast image' % fname)
 /home/ebahry/miniconda3/lib/python3.7/site-packages/skimage/io/_io.py:140: UserWarning: /scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/dapi_maxp/CB428_895_cropped_0.tif is a low contrast image
   warn('%s is a low contrast image' % fname)
+2021-01-09 01:58:00,311 - INFO - 50 - 
+
+Starting script move_files_to_scratch
+ *********************************************
+2021-01-09 01:58:05,423 - WARNING - 93 - Files that are in incorrect format:
+/data/preibisch/Laura_Microscopy/dosage_compensation/transcription_imaging/DPY27_KO/210106_n2_dpy27.rnai_dpy23.ex_mdh1.ex_dpy.int/210106_n2_dpy27.rnai_dpy23.ex_mdh1.ex_dpy.int_004.nd2
+/data/preibisch/Laura_Microscopy/dosage_compensation/transcription_imaging/DPY27_KO/210106_n2_dpy27.rnai_dpy23.ex_mdh1.ex_dpy.int/210106_n2_dpy27.rnai_dpy23.ex_mdh1.ex_dpy.int_003.nd2
+/data/preibisch/Laura_Microscopy/dosage_compensation/transcription_imaging/DPY27_KO/210106_n2_dpy27.rnai_dpy23.ex_mdh1.ex_dpy.int/210106_n2_dpy27.rnai_dpy23.ex_mdh1.ex_dpy.int_002.nd2
+/data/preibisch/Laura_Microscopy/dosage_compensation/transcription_imaging/DPY27_KO/210106_n2_dpy27.rnai_dpy23.ex_mdh1.ex_dpy.int/210106_n2_dpy27.rnai_dpy23.ex_mdh1.ex_dpy.int_001.nd2
+2021-01-09 01:58:05,428 - INFO - 104 - number of nd2 files before deleting duplicates: 5096
+2021-01-09 01:58:13,408 - INFO - 129 - number of nd2 files after deleting duplicates: 785
+2021-01-09 01:58:13,569 - INFO - 156 - number of new nd2 files: 0
+2021-01-09 01:58:13,570 - INFO - 171 - Creating gpf max projections for any image with status -1
+2021-01-09 01:58:13,576 - INFO - 198 - Finished script, yay!
+ ********************************************************************
+Using TensorFlow backend.
+WARNING:root:Limited tf.compat.v2.summary API due to missing TensorBoard installation.
+WARNING:root:Limited tf.compat.v2.summary API due to missing TensorBoard installation.
+WARNING:root:Limited tf.compat.v2.summary API due to missing TensorBoard installation.
+WARNING:root:Limited tf.compat.v2.summary API due to missing TensorBoard installation.
+WARNING:root:Limited tf.compat.v2.summary API due to missing TensorBoard installation.
+WARNING:root:Limited tf.compat.v2.summary API due to missing TensorBoard installation.
+WARNING:root:Limited tf.summary API due to missing TensorBoard installation.
+INFO:root:
+
+2021-01-09 02:08:35,463 - INFO - 50 - 
+
+Starting script move_files_to_scratch
+ *********************************************
+2021-01-09 02:08:36,706 - WARNING - 93 - Files that are in incorrect format:
+/data/preibisch/Laura_Microscopy/dosage_compensation/transcription_imaging/DPY27_KO/210106_n2_dpy27.rnai_dpy23.ex_mdh1.ex_dpy.int/210106_n2_dpy27.rnai_dpy23.ex_mdh1.ex_dpy.int_004.nd2
+/data/preibisch/Laura_Microscopy/dosage_compensation/transcription_imaging/DPY27_KO/210106_n2_dpy27.rnai_dpy23.ex_mdh1.ex_dpy.int/210106_n2_dpy27.rnai_dpy23.ex_mdh1.ex_dpy.int_003.nd2
+/data/preibisch/Laura_Microscopy/dosage_compensation/transcription_imaging/DPY27_KO/210106_n2_dpy27.rnai_dpy23.ex_mdh1.ex_dpy.int/210106_n2_dpy27.rnai_dpy23.ex_mdh1.ex_dpy.int_002.nd2
+/data/preibisch/Laura_Microscopy/dosage_compensation/transcription_imaging/DPY27_KO/210106_n2_dpy27.rnai_dpy23.ex_mdh1.ex_dpy.int/210106_n2_dpy27.rnai_dpy23.ex_mdh1.ex_dpy.int_001.nd2
+2021-01-09 02:08:36,710 - INFO - 104 - number of nd2 files before deleting duplicates: 5096
+2021-01-09 02:08:45,367 - INFO - 129 - number of nd2 files after deleting duplicates: 785
+2021-01-09 02:08:45,551 - INFO - 156 - number of new nd2 files: 0
+2021-01-09 02:08:45,551 - INFO - 171 - Creating gpf max projections for any image with status -1
+2021-01-09 02:08:45,559 - INFO - 198 - Finished script, yay!
+ ********************************************************************
+Using TensorFlow backend.
+WARNING:root:Limited tf.compat.v2.summary API due to missing TensorBoard installation.
+WARNING:root:Limited tf.compat.v2.summary API due to missing TensorBoard installation.
+WARNING:root:Limited tf.compat.v2.summary API due to missing TensorBoard installation.
+WARNING:root:Limited tf.compat.v2.summary API due to missing TensorBoard installation.
+WARNING:root:Limited tf.compat.v2.summary API due to missing TensorBoard installation.
+WARNING:root:Limited tf.compat.v2.summary API due to missing TensorBoard installation.
+WARNING:root:Limited tf.summary API due to missing TensorBoard installation.
+INFO:root:
+
+Starting script stage_prediction
+ *********************************************
+2021-01-09 02:09:31,905 - INFO - 47 - 
+
+Starting script stage_prediction
+ *********************************************
+Using TensorFlow backend.
+WARNING:root:Limited tf.compat.v2.summary API due to missing TensorBoard installation.
+WARNING:root:Limited tf.compat.v2.summary API due to missing TensorBoard installation.
+WARNING:root:Limited tf.compat.v2.summary API due to missing TensorBoard installation.
+WARNING:root:Limited tf.compat.v2.summary API due to missing TensorBoard installation.
+WARNING:root:Limited tf.compat.v2.summary API due to missing TensorBoard installation.
+WARNING:root:Limited tf.compat.v2.summary API due to missing TensorBoard installation.
+WARNING:root:Limited tf.summary API due to missing TensorBoard installation.
+INFO:root:
+
+Starting script stage_prediction
+ *********************************************
+2021-01-10 00:35:38,168 - INFO - 49 - 
+
+Starting script stage_prediction
+ *********************************************
+INFO:root:number of embryos to predict 1484
+2021-01-10 00:35:38,341 - INFO - 71 - number of embryos to predict 1484
+INFO:root:number of embryos to predict after checking dirs 1484
+2021-01-10 00:35:39,925 - INFO - 92 - number of embryos to predict after checking dirs 1484
+INFO:root:created masked dapi images
+2021-01-10 00:35:40,862 - INFO - 113 - created masked dapi images
+INFO:root:have read masked dapi images from dir
+2021-01-10 00:36:30,076 - INFO - 128 - have read masked dapi images from dir
+4_stage_prediction.py:152: RuntimeWarning: All-NaN slice encountered
+  normed_tile = (tile_zerotonan-np.nanmin(tile_zerotonan)) / (np.nanmax(tile_zerotonan)-np.nanmin(tile_zerotonan))
+INFO:root:normalized images and saved it
+[]
+2021-01-10 00:38:30,406 - INFO - 165 - normalized images and saved it
+/home/ebahry/miniconda3/lib/python3.7/site-packages/tifffile/tifffile.py:1109: UserWarning: saving zero size array to nonconformant TIFF
+  'saving zero size array to nonconformant TIFF', UserWarning
+INFO:root:created tiles and saved it
+2021-01-10 00:56:49,929 - INFO - 226 - created tiles and saved it
+2021-01-10 00:56:50.819140: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX
+2021-01-10 00:56:51.213435: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2599935000 Hz
+2021-01-10 00:56:51.231687: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55cb3593ea60 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-01-10 00:56:51.231794: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-01-10 00:56:51.257928: I tensorflow/core/common_runtime/process_util.cc:147] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+Traceback (most recent call last):
+  File "4_stage_prediction.py", line 232, in <module>
+    predicted_probabilities = [model.predict(t) for t in all_tiles]
+TypeError: 'NoneType' object is not iterable
+Using TensorFlow backend.
+WARNING:root:Limited tf.compat.v2.summary API due to missing TensorBoard installation.
+WARNING:root:Limited tf.compat.v2.summary API due to missing TensorBoard installation.
+WARNING:root:Limited tf.compat.v2.summary API due to missing TensorBoard installation.
+WARNING:root:Limited tf.compat.v2.summary API due to missing TensorBoard installation.
+WARNING:root:Limited tf.compat.v2.summary API due to missing TensorBoard installation.
+WARNING:root:Limited tf.compat.v2.summary API due to missing TensorBoard installation.
+WARNING:root:Limited tf.summary API due to missing TensorBoard installation.
+INFO:root:
+
+Starting script stage_prediction
+ *********************************************
+2021-01-10 01:35:48,078 - INFO - 49 - 
+
+Starting script stage_prediction
+ *********************************************
+INFO:root:number of embryos to predict 1484
+2021-01-10 01:35:48,263 - INFO - 71 - number of embryos to predict 1484
+INFO:root:number of embryos to predict after checking dirs 1484
+2021-01-10 01:35:51,099 - INFO - 92 - number of embryos to predict after checking dirs 1484
+INFO:root:created masked dapi images
+2021-01-10 01:35:51,980 - INFO - 113 - created masked dapi images
+INFO:root:have read masked dapi images from dir
+2021-01-10 01:37:19,981 - INFO - 128 - have read masked dapi images from dir
+4_stage_prediction.py:152: RuntimeWarning: All-NaN slice encountered
+  normed_tile = (tile_zerotonan-np.nanmin(tile_zerotonan)) / (np.nanmax(tile_zerotonan)-np.nanmin(tile_zerotonan))
+INFO:root:normalized images and saved it
+[]
+2021-01-10 01:42:54,565 - INFO - 166 - normalized images and saved it
+INFO:root:created tiles and saved it
+2021-01-10 01:42:55,799 - INFO - 223 - created tiles and saved it
+2021-01-11 16:59:46,927 - INFO - 43 - 
+
+Starting script copy_to_data
+ *********************************************
+2021-01-11 16:59:48,172 - WARNING - 68 - RNAi_rluc_702_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,172 - WARNING - 68 - RNAi_dpy27_2624_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,173 - WARNING - 68 - N2_3587_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,173 - WARNING - 68 - RNAi_dpy27_2629_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,173 - WARNING - 68 - RNAi_dpy27_2648_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,173 - WARNING - 68 - RNAi_rluc_705_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,173 - WARNING - 68 - N2_3558_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,173 - WARNING - 68 - CB428_916_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,173 - WARNING - 68 - N2_3478_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,173 - WARNING - 68 - N2_3550_cropped_1.tif is already in data, double name
+2021-01-11 16:59:48,174 - WARNING - 68 - CB428_907_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,174 - WARNING - 68 - N2_3575_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,174 - WARNING - 68 - N2_3529_cropped_2.tif is already in data, double name
+2021-01-11 16:59:48,174 - WARNING - 68 - N2_3481_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,174 - WARNING - 68 - N2_3546_cropped_1.tif is already in data, double name
+2021-01-11 16:59:48,174 - WARNING - 68 - RNAi_dpy27_2592_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,174 - WARNING - 68 - RNAi_rluc_718_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,174 - WARNING - 68 - RNAi_rluc_716_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,175 - WARNING - 68 - RNAi_rluc_699_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,175 - WARNING - 68 - N2_3543_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,175 - WARNING - 68 - N2_3579_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,175 - WARNING - 68 - RNAi_dpy27_2610_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,175 - WARNING - 68 - RNAi_rluc_703_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,175 - WARNING - 68 - RNAi_rluc_691_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,175 - WARNING - 68 - RNAi_dpy27_2630_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,176 - WARNING - 68 - CB428_897_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,176 - WARNING - 68 - RNAi_dpy27_2635_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,176 - WARNING - 68 - RNAi_dpy27_2594_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,176 - WARNING - 68 - RNAi_rluc_702_cropped_1.tif is already in data, double name
+2021-01-11 16:59:48,176 - WARNING - 68 - N2_3492_cropped_1.tif is already in data, double name
+2021-01-11 16:59:48,176 - WARNING - 68 - N2_3577_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,176 - WARNING - 68 - RNAi_ev_5_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,176 - WARNING - 68 - N2_3566_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,177 - WARNING - 68 - RNAi_dpy27_2647_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,177 - WARNING - 68 - N2_3557_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,177 - WARNING - 68 - RNAi_ev_12_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,177 - WARNING - 68 - N2_3498_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,177 - WARNING - 68 - N2_3499_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,177 - WARNING - 68 - CB428_911_cropped_1.tif is already in data, double name
+2021-01-11 16:59:48,177 - WARNING - 68 - N2_3500_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,178 - WARNING - 68 - CB428_924_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,178 - WARNING - 68 - N2_3495_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,178 - WARNING - 68 - CB428_913_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,178 - WARNING - 68 - CB428_869_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,178 - WARNING - 68 - N2_3553_cropped_1.tif is already in data, double name
+2021-01-11 16:59:48,178 - WARNING - 68 - RNAi_rluc_688_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,179 - WARNING - 68 - CB428_886_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,179 - WARNING - 68 - N2_3548_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,179 - WARNING - 68 - CB428_891_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,179 - WARNING - 68 - N2_3582_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,179 - WARNING - 68 - RNAi_rluc_689_cropped_1.tif is already in data, double name
+2021-01-11 16:59:48,179 - WARNING - 68 - CB428_904_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,179 - WARNING - 68 - N2_3528_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,179 - WARNING - 68 - N2_3537_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,180 - WARNING - 68 - N2_3483_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,180 - WARNING - 68 - N2_3487_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,180 - WARNING - 68 - RNAi_dpy27_2606_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,180 - WARNING - 68 - N2_3560_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,180 - WARNING - 68 - N2_3538_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,180 - WARNING - 68 - N2_3581_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,180 - WARNING - 68 - N2_3590_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,180 - WARNING - 68 - N2_3536_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,181 - WARNING - 68 - RNAi_dpy27_2642_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,181 - WARNING - 68 - RNAi_dpy27_2605_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,181 - WARNING - 68 - RNAi_rluc_689_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,181 - WARNING - 68 - CB428_911_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,181 - WARNING - 68 - N2_3485_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,181 - WARNING - 68 - RNAi_rluc_697_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,182 - WARNING - 68 - RNAi_dpy27_2626_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,182 - WARNING - 68 - RNAi_dpy27_2608_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,182 - WARNING - 68 - N2_3542_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,182 - WARNING - 68 - RNAi_dpy27_2623_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,182 - WARNING - 68 - RNAi_dpy27_2620_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,182 - WARNING - 68 - N2_3547_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,183 - WARNING - 68 - RNAi_dpy27_2625_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,183 - WARNING - 68 - RNAi_dpy27_2622_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,183 - WARNING - 68 - N2_3554_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,183 - WARNING - 68 - RNAi_rluc_720_cropped_1.tif is already in data, double name
+2021-01-11 16:59:48,183 - WARNING - 68 - RNAi_rluc_710_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,183 - WARNING - 68 - RNAi_rluc_686_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,183 - WARNING - 68 - N2_3533_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,183 - WARNING - 68 - RNAi_rluc_700_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,183 - WARNING - 68 - N2_3572_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,183 - WARNING - 68 - CB428_921_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,184 - WARNING - 68 - RNAi_dpy27_2621_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,184 - WARNING - 68 - N2_3574_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,184 - WARNING - 68 - RNAi_rluc_720_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,184 - WARNING - 68 - N2_3583_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,184 - WARNING - 68 - RNAi_ev_8_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,184 - WARNING - 68 - N2_3571_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,184 - WARNING - 68 - N2_3570_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,184 - WARNING - 68 - CB428_876_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,184 - WARNING - 68 - RNAi_ev_15_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,185 - WARNING - 68 - N2_3541_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,185 - WARNING - 68 - RNAi_dpy27_2639_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,185 - WARNING - 68 - CB428_898_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,185 - WARNING - 68 - CB428_919_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,185 - WARNING - 68 - CB428_917_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,185 - WARNING - 68 - RNAi_rluc_694_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,185 - WARNING - 68 - N2_3535_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,185 - WARNING - 68 - CB428_883_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,186 - WARNING - 68 - N2_3480_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,186 - WARNING - 68 - N2_3567_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,186 - WARNING - 68 - CB428_918_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,186 - WARNING - 68 - RNAi_rluc_706_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,186 - WARNING - 68 - RNAi_rluc_685_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,187 - WARNING - 68 - RNAi_rluc_715_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,187 - WARNING - 68 - N2_3553_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,187 - WARNING - 68 - N2_3537_cropped_1.tif is already in data, double name
+2021-01-11 16:59:48,187 - WARNING - 68 - N2_3497_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,187 - WARNING - 68 - RNAi_dpy27_2645_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,187 - WARNING - 68 - RNAi_rluc_708_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,187 - WARNING - 68 - N2_3578_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,188 - WARNING - 68 - N2_3529_cropped_1.tif is already in data, double name
+2021-01-11 16:59:48,188 - WARNING - 68 - CB428_903_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,188 - WARNING - 68 - RNAi_ev_6_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,188 - WARNING - 68 - CB428_880_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,188 - WARNING - 68 - RNAi_dpy27_2639_cropped_1.tif is already in data, double name
+2021-01-11 16:59:48,188 - WARNING - 68 - N2_3475_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,188 - WARNING - 68 - CB428_866_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,189 - WARNING - 68 - CB428_872_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,189 - WARNING - 68 - RNAi_dpy27_2609_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,189 - WARNING - 68 - RNAi_rluc_695_cropped_1.tif is already in data, double name
+2021-01-11 16:59:48,189 - WARNING - 68 - RNAi_rluc_690_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,189 - WARNING - 68 - N2_3589_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,189 - WARNING - 68 - CB428_867_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,189 - WARNING - 68 - RNAi_rluc_709_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,190 - WARNING - 68 - RNAi_dpy27_2619_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,190 - WARNING - 68 - CB428_865_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,190 - WARNING - 68 - CB428_888_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,190 - WARNING - 68 - N2_3489_cropped_1.tif is already in data, double name
+2021-01-11 16:59:48,190 - WARNING - 68 - RNAi_ev_2_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,190 - WARNING - 68 - RNAi_dpy27_2636_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,190 - WARNING - 68 - RNAi_rluc_698_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,191 - WARNING - 68 - RNAi_rluc_693_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,191 - WARNING - 68 - N2_3546_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,191 - WARNING - 68 - CB428_880_cropped_1.tif is already in data, double name
+2021-01-11 16:59:48,191 - WARNING - 68 - RNAi_dpy27_2640_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,191 - WARNING - 68 - CB428_873_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,191 - WARNING - 68 - N2_3530_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,191 - WARNING - 68 - N2_3489_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,191 - WARNING - 68 - N2_3492_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,192 - WARNING - 68 - N2_3591_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,192 - WARNING - 68 - CB428_871_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,192 - WARNING - 68 - CB428_882_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,192 - WARNING - 68 - CB428_909_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,192 - WARNING - 68 - RNAi_rluc_696_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,192 - WARNING - 68 - RNAi_dpy27_2593_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,192 - WARNING - 68 - N2_3486_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,193 - WARNING - 68 - CB428_893_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,193 - WARNING - 68 - RNAi_dpy27_2641_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,193 - WARNING - 68 - RNAi_dpy27_2601_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,193 - WARNING - 68 - RNAi_dpy27_2637_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,193 - WARNING - 68 - RNAi_dpy27_2596_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,193 - WARNING - 68 - N2_3477_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,193 - WARNING - 68 - RNAi_dpy27_2611_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,194 - WARNING - 68 - N2_3494_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,194 - WARNING - 68 - CB428_902_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,194 - WARNING - 68 - RNAi_dpy27_2600_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,194 - WARNING - 68 - N2_3527_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,194 - WARNING - 68 - CB428_881_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,194 - WARNING - 68 - N2_3550_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,195 - WARNING - 68 - N2_3526_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,195 - WARNING - 68 - N2_3539_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,195 - WARNING - 68 - N2_3549_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,195 - WARNING - 68 - CB428_910_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,195 - WARNING - 68 - CB428_868_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,195 - WARNING - 68 - RNAi_rluc_695_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,195 - WARNING - 68 - CB428_906_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,195 - WARNING - 68 - N2_3488_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,195 - WARNING - 68 - RNAi_dpy27_2638_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,196 - WARNING - 68 - N2_3532_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,196 - WARNING - 68 - N2_3565_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,196 - WARNING - 68 - N2_3476_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,196 - WARNING - 68 - N2_3568_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,196 - WARNING - 68 - N2_3534_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,196 - WARNING - 68 - CB428_900_cropped_1.tif is already in data, double name
+2021-01-11 16:59:48,196 - WARNING - 68 - CB428_915_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,197 - WARNING - 68 - CB428_890_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,197 - WARNING - 68 - CB428_878_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,197 - WARNING - 68 - N2_3580_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,197 - WARNING - 68 - CB428_900_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,197 - WARNING - 68 - N2_3551_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,197 - WARNING - 68 - N2_3484_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,198 - WARNING - 68 - N2_3573_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,198 - WARNING - 68 - CB428_908_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,198 - WARNING - 68 - RNAi_dpy27_2644_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,198 - WARNING - 68 - N2_3507_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,198 - WARNING - 68 - N2_3493_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,198 - WARNING - 68 - CB428_889_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,198 - WARNING - 68 - RNAi_dpy27_2623_cropped_2.tif is already in data, double name
+2021-01-11 16:59:48,199 - WARNING - 68 - N2_3576_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,199 - WARNING - 68 - N2_3491_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,199 - WARNING - 68 - RNAi_dpy27_2623_cropped_1.tif is already in data, double name
+2021-01-11 16:59:48,199 - WARNING - 68 - CB428_899_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,199 - WARNING - 68 - RNAi_rluc_690_cropped_1.tif is already in data, double name
+2021-01-11 16:59:48,200 - WARNING - 68 - CB428_875_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,200 - WARNING - 68 - CB428_914_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,200 - WARNING - 68 - N2_3588_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,200 - WARNING - 68 - CB428_901_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,200 - WARNING - 68 - CB428_877_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,200 - WARNING - 68 - RNAi_dpy27_2616_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,200 - WARNING - 68 - RNAi_ev_3_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,201 - WARNING - 68 - CB428_895_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,201 - WARNING - 68 - CB428_922_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,201 - WARNING - 68 - N2_3555_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,201 - WARNING - 68 - CB428_920_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,201 - WARNING - 68 - N2_3584_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,201 - WARNING - 68 - RNAi_dpy27_2607_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,202 - WARNING - 68 - CB428_870_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,202 - WARNING - 68 - N2_3490_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,202 - WARNING - 68 - CB428_887_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,202 - WARNING - 68 - CB428_884_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,202 - WARNING - 68 - RNAi_ev_14_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,202 - WARNING - 68 - N2_3496_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,202 - WARNING - 68 - RNAi_dpy27_2634_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,203 - WARNING - 68 - RNAi_dpy27_2643_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,203 - WARNING - 68 - N2_3501_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,203 - WARNING - 68 - RNAi_rluc_711_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,203 - WARNING - 68 - RNAi_dpy27_2627_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,203 - WARNING - 68 - N2_3552_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,203 - WARNING - 68 - N2_3529_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,203 - WARNING - 68 - RNAi_ev_16_cropped_0.tif is already in data, double name
+2021-01-11 16:59:48,203 - WARNING - 68 - RNAi_rluc_710_cropped_1.tif is already in data, double name
+2021-01-11 16:59:48,204 - WARNING - 68 - N2_3556_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,204 - WARNING - 85 - RNAi_rluc_702_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,204 - WARNING - 85 - RNAi_dpy27_2624_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,204 - WARNING - 85 - N2_3587_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,204 - WARNING - 85 - RNAi_dpy27_2629_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,205 - WARNING - 85 - RNAi_dpy27_2648_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,205 - WARNING - 85 - RNAi_rluc_705_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,205 - WARNING - 85 - N2_3558_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,205 - WARNING - 85 - CB428_916_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,205 - WARNING - 85 - N2_3478_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,205 - WARNING - 85 - N2_3550_cropped_1.tif is already in data, double name
+2021-01-11 16:59:49,205 - WARNING - 85 - CB428_907_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,205 - WARNING - 85 - N2_3575_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,206 - WARNING - 85 - N2_3529_cropped_2.tif is already in data, double name
+2021-01-11 16:59:49,206 - WARNING - 85 - N2_3481_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,206 - WARNING - 85 - N2_3546_cropped_1.tif is already in data, double name
+2021-01-11 16:59:49,206 - WARNING - 85 - RNAi_dpy27_2592_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,206 - WARNING - 85 - RNAi_rluc_718_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,206 - WARNING - 85 - RNAi_rluc_716_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,206 - WARNING - 85 - RNAi_rluc_699_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,207 - WARNING - 85 - N2_3543_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,207 - WARNING - 85 - N2_3579_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,207 - WARNING - 85 - RNAi_dpy27_2610_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,207 - WARNING - 85 - RNAi_rluc_703_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,207 - WARNING - 85 - RNAi_rluc_691_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,208 - WARNING - 85 - RNAi_dpy27_2630_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,208 - WARNING - 85 - CB428_897_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,208 - WARNING - 85 - RNAi_dpy27_2635_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,208 - WARNING - 85 - RNAi_dpy27_2594_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,208 - WARNING - 85 - RNAi_rluc_702_cropped_1.tif is already in data, double name
+2021-01-11 16:59:49,208 - WARNING - 85 - N2_3492_cropped_1.tif is already in data, double name
+2021-01-11 16:59:49,209 - WARNING - 85 - N2_3577_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,209 - WARNING - 85 - RNAi_ev_5_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,209 - WARNING - 85 - N2_3566_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,209 - WARNING - 85 - RNAi_dpy27_2647_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,209 - WARNING - 85 - N2_3557_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,209 - WARNING - 85 - RNAi_ev_12_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,209 - WARNING - 85 - N2_3498_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,210 - WARNING - 85 - N2_3499_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,210 - WARNING - 85 - CB428_911_cropped_1.tif is already in data, double name
+2021-01-11 16:59:49,210 - WARNING - 85 - N2_3500_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,210 - WARNING - 85 - CB428_924_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,210 - WARNING - 85 - N2_3495_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,210 - WARNING - 85 - CB428_913_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,210 - WARNING - 85 - CB428_869_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,211 - WARNING - 85 - N2_3553_cropped_1.tif is already in data, double name
+2021-01-11 16:59:49,211 - WARNING - 85 - RNAi_rluc_688_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,211 - WARNING - 85 - CB428_886_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,211 - WARNING - 85 - N2_3548_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,211 - WARNING - 85 - CB428_891_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,211 - WARNING - 85 - N2_3582_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,212 - WARNING - 85 - RNAi_rluc_689_cropped_1.tif is already in data, double name
+2021-01-11 16:59:49,212 - WARNING - 85 - CB428_904_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,212 - WARNING - 85 - N2_3528_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,212 - WARNING - 85 - N2_3537_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,212 - WARNING - 85 - N2_3483_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,212 - WARNING - 85 - N2_3487_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,213 - WARNING - 85 - RNAi_dpy27_2606_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,213 - WARNING - 85 - N2_3560_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,213 - WARNING - 85 - N2_3538_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,213 - WARNING - 85 - N2_3581_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,213 - WARNING - 85 - N2_3590_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,213 - WARNING - 85 - N2_3536_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,213 - WARNING - 85 - RNAi_dpy27_2642_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,214 - WARNING - 85 - RNAi_dpy27_2605_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,214 - WARNING - 85 - RNAi_rluc_689_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,214 - WARNING - 85 - CB428_911_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,214 - WARNING - 85 - N2_3485_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,214 - WARNING - 85 - RNAi_rluc_697_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,214 - WARNING - 85 - RNAi_dpy27_2626_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,214 - WARNING - 85 - RNAi_dpy27_2608_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,215 - WARNING - 85 - N2_3542_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,215 - WARNING - 85 - RNAi_dpy27_2623_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,215 - WARNING - 85 - RNAi_dpy27_2620_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,215 - WARNING - 85 - N2_3547_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,215 - WARNING - 85 - RNAi_dpy27_2625_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,215 - WARNING - 85 - RNAi_dpy27_2622_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,215 - WARNING - 85 - N2_3554_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,215 - WARNING - 85 - RNAi_rluc_720_cropped_1.tif is already in data, double name
+2021-01-11 16:59:49,216 - WARNING - 85 - RNAi_rluc_710_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,216 - WARNING - 85 - RNAi_rluc_686_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,216 - WARNING - 85 - N2_3533_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,216 - WARNING - 85 - RNAi_rluc_700_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,216 - WARNING - 85 - N2_3572_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,216 - WARNING - 85 - CB428_921_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,216 - WARNING - 85 - RNAi_dpy27_2621_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,216 - WARNING - 85 - N2_3574_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,217 - WARNING - 85 - RNAi_rluc_720_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,217 - WARNING - 85 - N2_3583_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,217 - WARNING - 85 - RNAi_ev_8_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,217 - WARNING - 85 - N2_3571_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,217 - WARNING - 85 - N2_3570_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,217 - WARNING - 85 - CB428_876_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,217 - WARNING - 85 - RNAi_ev_15_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,217 - WARNING - 85 - N2_3541_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,217 - WARNING - 85 - RNAi_dpy27_2639_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,218 - WARNING - 85 - CB428_898_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,218 - WARNING - 85 - CB428_919_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,218 - WARNING - 85 - CB428_917_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,218 - WARNING - 85 - RNAi_rluc_694_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,218 - WARNING - 85 - N2_3535_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,218 - WARNING - 85 - CB428_883_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,218 - WARNING - 85 - N2_3480_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,219 - WARNING - 85 - N2_3567_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,219 - WARNING - 85 - CB428_918_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,219 - WARNING - 85 - RNAi_rluc_706_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,219 - WARNING - 85 - RNAi_rluc_685_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,219 - WARNING - 85 - RNAi_rluc_715_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,219 - WARNING - 85 - N2_3553_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,219 - WARNING - 85 - N2_3537_cropped_1.tif is already in data, double name
+2021-01-11 16:59:49,219 - WARNING - 85 - N2_3497_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,220 - WARNING - 85 - RNAi_dpy27_2645_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,220 - WARNING - 85 - RNAi_rluc_708_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,220 - WARNING - 85 - N2_3578_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,220 - WARNING - 85 - N2_3529_cropped_1.tif is already in data, double name
+2021-01-11 16:59:49,220 - WARNING - 85 - CB428_903_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,220 - WARNING - 85 - RNAi_ev_6_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,220 - WARNING - 85 - CB428_880_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,221 - WARNING - 85 - RNAi_dpy27_2639_cropped_1.tif is already in data, double name
+2021-01-11 16:59:49,221 - WARNING - 85 - N2_3475_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,221 - WARNING - 85 - CB428_866_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,221 - WARNING - 85 - CB428_872_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,221 - WARNING - 85 - RNAi_dpy27_2609_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,221 - WARNING - 85 - RNAi_rluc_695_cropped_1.tif is already in data, double name
+2021-01-11 16:59:49,221 - WARNING - 85 - RNAi_rluc_690_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,221 - WARNING - 85 - N2_3589_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,222 - WARNING - 85 - CB428_867_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,222 - WARNING - 85 - RNAi_rluc_709_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,222 - WARNING - 85 - RNAi_dpy27_2619_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,222 - WARNING - 85 - CB428_865_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,222 - WARNING - 85 - CB428_888_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,222 - WARNING - 85 - N2_3489_cropped_1.tif is already in data, double name
+2021-01-11 16:59:49,222 - WARNING - 85 - RNAi_ev_2_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,222 - WARNING - 85 - RNAi_dpy27_2636_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,222 - WARNING - 85 - RNAi_rluc_698_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,222 - WARNING - 85 - RNAi_rluc_693_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,222 - WARNING - 85 - N2_3546_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,223 - WARNING - 85 - CB428_880_cropped_1.tif is already in data, double name
+2021-01-11 16:59:49,223 - WARNING - 85 - RNAi_dpy27_2640_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,223 - WARNING - 85 - CB428_873_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,223 - WARNING - 85 - N2_3530_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,223 - WARNING - 85 - N2_3489_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,223 - WARNING - 85 - N2_3492_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,223 - WARNING - 85 - N2_3591_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,223 - WARNING - 85 - CB428_871_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,223 - WARNING - 85 - CB428_882_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,224 - WARNING - 85 - CB428_909_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,224 - WARNING - 85 - RNAi_rluc_696_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,224 - WARNING - 85 - RNAi_dpy27_2593_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,224 - WARNING - 85 - N2_3486_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,224 - WARNING - 85 - CB428_893_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,224 - WARNING - 85 - RNAi_dpy27_2641_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,224 - WARNING - 85 - RNAi_dpy27_2601_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,224 - WARNING - 85 - RNAi_dpy27_2637_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,224 - WARNING - 85 - RNAi_dpy27_2596_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,225 - WARNING - 85 - N2_3477_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,225 - WARNING - 85 - RNAi_dpy27_2611_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,225 - WARNING - 85 - N2_3494_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,225 - WARNING - 85 - CB428_902_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,225 - WARNING - 85 - RNAi_dpy27_2600_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,225 - WARNING - 85 - N2_3527_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,225 - WARNING - 85 - CB428_881_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,226 - WARNING - 85 - N2_3550_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,226 - WARNING - 85 - N2_3526_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,226 - WARNING - 85 - N2_3539_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,226 - WARNING - 85 - N2_3549_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,226 - WARNING - 85 - CB428_910_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,226 - WARNING - 85 - CB428_868_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,226 - WARNING - 85 - RNAi_rluc_695_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,226 - WARNING - 85 - CB428_906_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,226 - WARNING - 85 - N2_3488_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,226 - WARNING - 85 - RNAi_dpy27_2638_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,227 - WARNING - 85 - N2_3532_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,227 - WARNING - 85 - N2_3565_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,227 - WARNING - 85 - N2_3476_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,227 - WARNING - 85 - N2_3568_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,227 - WARNING - 85 - N2_3534_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,227 - WARNING - 85 - CB428_900_cropped_1.tif is already in data, double name
+2021-01-11 16:59:49,227 - WARNING - 85 - CB428_915_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,228 - WARNING - 85 - CB428_890_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,228 - WARNING - 85 - CB428_878_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,228 - WARNING - 85 - N2_3580_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,228 - WARNING - 85 - CB428_900_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,228 - WARNING - 85 - N2_3551_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,228 - WARNING - 85 - N2_3484_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,228 - WARNING - 85 - N2_3573_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,229 - WARNING - 85 - CB428_908_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,229 - WARNING - 85 - RNAi_dpy27_2644_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,229 - WARNING - 85 - N2_3507_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,229 - WARNING - 85 - N2_3493_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,229 - WARNING - 85 - CB428_889_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,229 - WARNING - 85 - RNAi_dpy27_2623_cropped_2.tif is already in data, double name
+2021-01-11 16:59:49,229 - WARNING - 85 - N2_3576_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,229 - WARNING - 85 - N2_3491_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,230 - WARNING - 85 - RNAi_dpy27_2623_cropped_1.tif is already in data, double name
+2021-01-11 16:59:49,230 - WARNING - 85 - CB428_899_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,230 - WARNING - 85 - RNAi_rluc_690_cropped_1.tif is already in data, double name
+2021-01-11 16:59:49,230 - WARNING - 85 - CB428_875_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,230 - WARNING - 85 - CB428_914_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,230 - WARNING - 85 - N2_3588_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,230 - WARNING - 85 - CB428_901_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,230 - WARNING - 85 - CB428_877_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,231 - WARNING - 85 - RNAi_dpy27_2616_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,231 - WARNING - 85 - RNAi_ev_3_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,231 - WARNING - 85 - CB428_895_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,231 - WARNING - 85 - CB428_922_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,231 - WARNING - 85 - N2_3555_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,231 - WARNING - 85 - CB428_920_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,231 - WARNING - 85 - N2_3584_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,231 - WARNING - 85 - RNAi_dpy27_2607_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,232 - WARNING - 85 - CB428_870_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,232 - WARNING - 85 - N2_3490_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,232 - WARNING - 85 - CB428_887_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,232 - WARNING - 85 - CB428_884_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,232 - WARNING - 85 - RNAi_ev_14_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,232 - WARNING - 85 - N2_3496_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,232 - WARNING - 85 - RNAi_dpy27_2634_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,232 - WARNING - 85 - RNAi_dpy27_2643_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,232 - WARNING - 85 - N2_3501_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,232 - WARNING - 85 - RNAi_rluc_711_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,233 - WARNING - 85 - RNAi_dpy27_2627_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,233 - WARNING - 85 - N2_3552_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,233 - WARNING - 85 - N2_3529_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,233 - WARNING - 85 - RNAi_ev_16_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,233 - WARNING - 85 - RNAi_rluc_710_cropped_1.tif is already in data, double name
+2021-01-11 16:59:49,233 - WARNING - 85 - N2_3556_cropped_0.tif is already in data, double name
+2021-01-11 16:59:49,265 - INFO - 101 - Finished script, yay!
+ ********************************************************************

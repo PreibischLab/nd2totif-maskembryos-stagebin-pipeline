@@ -16,7 +16,7 @@ dir_path_tif = os.path.join(pipeline_dir, 'tif_temp_files')
 
 dir_path_finaldata = os.path.join(pipeline_dir, 'finaldata_temp_files')
 
-dir_dapi = os.path.join(pipeline_dir, 'dapi_maxp')
+dir_dapi = os.path.join(pipeline_dir, 'dapi')
 dir_preview = os.path.join(pipeline_dir, "preview_embryos")
 
 predicted_npz_path = os.path.join(pipeline_dir, 'predicted_masks_and_filenames.npz')
@@ -148,16 +148,10 @@ csv_file.to_csv(csv_path, index=False)
 #######################################################################
 # Create images individual embryos:
 
-def make_maxproj(im, new_name, channel_num, output_path, save_im=True):
+def make_maxproj(im, channel_num):
 
     im = im[:,channel_num,:,:]
-
     im = np.max(im,axis=0)
-
-    if save_im:
-        io.imsave(os.path.join(output_path, new_name), im)
-        os.chmod(os.path.join(output_path, new_name), 0o664)
-
     return im
 
 # create finaldata images and preview images:
@@ -185,9 +179,13 @@ def make_final_tifs_and_preview(im_df, dir_path_tif, dir_path_finaldata, mask_fu
             os.path.join(pipeline_dir,'masks',im_df.at[idx,"cropped_mask_file"]))
         os.chmod(os.path.join(pipeline_dir,'masks',im_df.at[idx,"cropped_mask_file"]), 0o664)
 
-        dapi_im = make_maxproj(embryo_tif, im_df.at[idx,"cropped_image_file"], int(im_df.at[idx,"DAPI channel"]), dir_dapi)
-        fish_im = make_maxproj(embryo_tif, False, 0, False, save_im=False)
-        gfp_im = make_maxproj(embryo_tif, False, int(im_df.at[idx,"GFP channel"]), False, save_im=False)
+        # SAve dapi image (3d):
+        io.imsave(os.path.join(dir_dapi, new_name), embryo_tif[:,int(im_df.at[idx,"DAPI channel"])])
+        os.chmod(os.path.join(output_path, new_name), 0o664)
+
+        dapi_im = make_maxproj(embryo_tif, int(im_df.at[idx,"DAPI channel"]))
+        fish_im = make_maxproj(embryo_tif, 0)
+        gfp_im = make_maxproj(embryo_tif, int(im_df.at[idx,"GFP channel"]))
 
         # Normalize images:
         dapi_im = dapi_im/np.max(dapi_im) if np.max(dapi_im)>1 else dapi_im
