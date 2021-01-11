@@ -215,11 +215,15 @@ logging.info(f'Finished nd2 to tif')
 
 ######################## Fill in dafault values in csv ##############################
 
-csv_file = csv_file.fillna(value={'c3_lambda':-1, 'c4_lambda':-1, '#c0_smfish':-1, '#c1_smfish':-1, 
-    '#c2_smfish':-1, '#nuclei':-1, '#nucs_predicted':-1, 'signal':-1, 'crop_offset_x':-1, 
-    'crop_offset_y':-1, 'is_valid_final':-1, 'status':-1, '#c0_smfish_adj':-1, '#c1_smfish_adj':-1, '#c2_smfish_adj':-1, 
-    'unique_id':-1, 'is_male_batch':0, 'is_male':-1, 'is_z_cropped':-1, 'num_z_planes':-1, 
-    'is_too_bleached':-1, 'tx':-1,})
+csv_file = csv_file.fillna(value={'c3_lambda':-1, 'c4_lambda':-1, 
+    '#c0_smfish':-1, '#c1_smfish':-1, '#c2_smfish':-1, 
+    'c1_saturation':-1, 'c2_saturation':-1, 'c3_saturation':-1, 'c4_saturation':-1, 
+    '#c0_smfish_adj':-1, '#c1_smfish_adj':-1, '#c2_smfish_adj':-1,
+    'crop_offset_x':-1, 'crop_offset_y':-1,
+    'is_male_batch':0, 'is_male':-1, 'is_z_cropped':-1, 'num_z_planes':-1, 'is_too_bleached':-1, 'tx':-1,
+    'signal':-1,  'is_valid_final':-1, 'status':-1, 'first_slice':-1, 'last_slice':-1,
+    'stage_bin':-1, 'predicted_bin':-1, 'bin_confidence_count':-1, 'bin_confidence_mean':-1,    
+    'unique_id':-1, })
 
 csv_file.to_csv(csv_path, index=False)
 
