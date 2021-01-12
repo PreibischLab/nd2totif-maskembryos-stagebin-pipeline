@@ -166,8 +166,10 @@ def make_final_tifs_and_preview(im_df, dir_path_tif, dir_path_finaldata, mask_fu
         coords = [int(im_df.at[idx,"crop_offset_y"]), end_coords[0], int(im_df.at[idx,"crop_offset_x"]), end_coords[1]]
 
         embryo_tif = im[:,:,coords[0]:coords[1],coords[2]:coords[3]]
-        tif.imsave(os.path.join(dir_path_finaldata,'tifs',im_df.at[idx,"cropped_image_file"]), embryo_tif)
-        os.chmod(os.path.join(dir_path_finaldata,'tifs',im_df.at[idx,"cropped_image_file"]), 0o664)
+        embryo_name = im_df.at[idx,"cropped_image_file"]
+
+        tif.imsave(os.path.join(dir_path_finaldata,'tifs',embryo_name), embryo_tif)
+        os.chmod(os.path.join(dir_path_finaldata,'tifs',embryo_name), 0o664)
 
         embryo_mask = mask_full_im[coords[0]:coords[1],coords[2]:coords[3]]
         embryo_mask[embryo_mask==unique_labels[i]] = 255
@@ -180,8 +182,8 @@ def make_final_tifs_and_preview(im_df, dir_path_tif, dir_path_finaldata, mask_fu
         os.chmod(os.path.join(pipeline_dir,'masks',im_df.at[idx,"cropped_mask_file"]), 0o664)
 
         # SAve dapi image (3d):
-        io.imsave(os.path.join(dir_dapi, new_name), embryo_tif[:,int(im_df.at[idx,"DAPI channel"])])
-        os.chmod(os.path.join(output_path, new_name), 0o664)
+        io.imsave(os.path.join(dir_dapi, embryo_name), embryo_tif[:,int(im_df.at[idx,"DAPI channel"])])
+        os.chmod(os.path.join(dir_dapi, embryo_name), 0o664)
 
         dapi_im = make_maxproj(embryo_tif, int(im_df.at[idx,"DAPI channel"]))
         fish_im = make_maxproj(embryo_tif, 0)
@@ -200,8 +202,8 @@ def make_final_tifs_and_preview(im_df, dir_path_tif, dir_path_finaldata, mask_fu
         preview_im[gfp_im.shape[0]:, :gfp_im.shape[1]] = dapi_im
         preview_im[gfp_im.shape[0]:, gfp_im.shape[1]:] = fish_im
 
-        tif.imsave(os.path.join(dir_preview,im_df.at[idx,"cropped_image_file"]), preview_im)
-        os.chmod(os.path.join(dir_preview,im_df.at[idx,"cropped_image_file"]), 0o664)
+        tif.imsave(os.path.join(dir_preview,embryo_name), preview_im)
+        os.chmod(os.path.join(dir_preview,embryo_name), 0o664)
 
     return is_dapi_stack
 
