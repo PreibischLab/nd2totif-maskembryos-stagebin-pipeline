@@ -134,7 +134,7 @@ for i,embryo_stack_im in enumerate(embryos_stacks):
     if embryo_stack_im.size==0:
         to_del.append(i)
 
-print(to_del)
+logging.info(f'empty images that will be deleted: {to_del}')
 
 for i in to_del[::-1]:
     logging.info(f'{ims_path[i]} removed')
@@ -228,8 +228,7 @@ all_tiles = []
 
 for n in ims_names:
     path = os.path.join(embryos_normed_path, f'{n[:-4]}_tiles.tif')
-    #if os.path.exists(path) and os.path.getsize(path)>100000:
-    if os.path.exists(path):
+    if os.path.exists(path): #and os.path.getsize(path)>100000:
 
         all_tiles.append(tif.imread(path))
         names_final.append(n)

@@ -141,3 +141,5 @@ RNAi_ama1_1417_cropped_1.mask.tif
 RNAi_dpy27_2722_cropped_1.mask.tif
 RNAi_dpy27_2280_cropped_3.mask.tif
 RNAi_dpy27_2434_cropped_0.mask.tif
+RNAi_dpy27_2280_cropped_3.mask.tif
+RNAi_dpy27_2434_cropped_0.mask.tif
