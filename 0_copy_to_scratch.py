@@ -71,7 +71,7 @@ shutil.copyfile(csv_path, scratch_csv_path)
 # Get all nd2:
 
 # All Files Conditions:
-conditions = ['n2', 'sea-12', 'mk4', 'cb428']
+conditions = ['n2', 'sea-12', 'mk4', 'cb428', 'sea03', 'mt14911', 'ty5686', 'vc199']
 
 all_nd2 = [str(path) for path in Path(dir_path_nd2).rglob(f'*.nd2') if any(c in path.name for c in conditions)]
 
