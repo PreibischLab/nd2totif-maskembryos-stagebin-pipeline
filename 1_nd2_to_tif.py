@@ -217,7 +217,7 @@ logging.info(f'Finished nd2 to tif')
 
 csv_file = csv_file.fillna(value={'c3_lambda':-1, 'c4_lambda':-1, 
     '#c0_smfish':-1, '#c1_smfish':-1, '#c2_smfish':-1, 
-    'c1_saturation':-1, 'c2_saturation':-1, 'c3_saturation':-1, 'c4_saturation':-1, 
+    'c0_saturation':-1,'c1_saturation':-1, 'c2_saturation':-1, 'c3_saturation':-1, 'c4_saturation':-1, 
     '#c0_smfish_adj':-1, '#c1_smfish_adj':-1, '#c2_smfish_adj':-1,
     'crop_offset_x':-1, 'crop_offset_y':-1,
     'is_male_batch':0, 'is_male':-1, 'is_z_cropped':-1, 'num_z_planes':-1, 'is_too_bleached':-1, 'tx':-1,

@@ -173,7 +173,7 @@ def make_final_tifs_and_preview(im_df, dir_path_tif, dir_path_finaldata, mask_fu
 
         embryo_mask = mask_full_im[coords[0]:coords[1],coords[2]:coords[3]]
         embryo_mask[embryo_mask==unique_labels[i]] = 255
-        embryo_mask[embryo_mask==unique_labels[i]] = 0
+        embryo_mask[embryo_mask!=255] = 0
         tif.imsave(os.path.join(dir_path_finaldata,'masks',im_df.at[idx,"cropped_mask_file"]), embryo_mask.astype(np.int8))
         os.chmod(os.path.join(dir_path_finaldata,'masks',im_df.at[idx,"cropped_mask_file"]), 0o664)
         # Save the mask also in scratch masks dir:
