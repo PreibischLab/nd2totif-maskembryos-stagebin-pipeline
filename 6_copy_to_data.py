@@ -68,8 +68,8 @@ for i,n in enumerate(tifs_names):
 		logging.warning(f'{n} is already in data, double name')
 
 
-## Copy original tifs (from nd2 before cropping:
-org_tifs_scratch_paths = glob(os.path.join(dir_path_scratch_finaldata, 'tifs', '*'))
+## Copy original tifs (from nd2 before cropping):
+org_tifs_scratch_paths = glob(os.path.join(dir_path_new_tif, '*'))
 
 all_org_old_tifs_names = [os.path.basename(f) for f in glob(os.path.join(dir_path_data_tifs, '*'))]
 

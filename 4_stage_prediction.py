@@ -228,7 +228,7 @@ all_tiles = []
 
 for n in ims_names:
     path = os.path.join(embryos_normed_path, f'{n[:-4]}_tiles.tif')
-    if os.path.exists(path): #and os.path.getsize(path)>100000:
+    if os.path.exists(path) and os.path.getsize(path)>100000:
 
         all_tiles.append(tif.imread(path))
         names_final.append(n)
