@@ -96,5 +96,3 @@
 171017_n2_dpy23.ex_dpy23.int_mdh1.ex_022.nd2
 180906_n2_rnai.set1_sdc2.ex_sdc2.int_mdh1.ex_002.nd2
 171017_n2_dpy23.ex_dpy23.int_mdh1.ex_025.nd2
-210117_sea-12_dpy23.ex_mdh1.ex_dpy23.int_001.nd2
-210117_sea-12_dpy23.ex_mdh1.ex_dpy23.int_001.nd2
