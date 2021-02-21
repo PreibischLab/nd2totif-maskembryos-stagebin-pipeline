@@ -64,11 +64,11 @@ for i in idxs:
 
 	mask_path = os.path.join(dir_path_masks, csv_file.at[i,"cropped_mask_file"])
 	if os.path.exists(mask_path):
-		mask_im = tif.imread()
+		mask_im = tif.imread(mask_path)
 		mask_im = mask_im.astype(np.uint8)
 		mask_im[mask_im==-1] = 255
 	else:
-		mask_im = np.zeros((fish_im0.shape[0]*2, fish_im0.shape[1]*2))
+		mask_im = np.zeros((fish_im0.shape[0], fish_im0.shape[1]))
 
 	## Create the preview:
 	preview_im = np.zeros((fish_im0.shape[0]*2, fish_im0.shape[1]*2), dtype=np.float32)
