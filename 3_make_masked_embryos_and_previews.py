@@ -8,6 +8,9 @@ import numpy as np
 from skimage import io
 import shutil
 
+from skimage import exposure
+
+
 pipeline_dir = os.path.join('/scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline')
 
 csv_path = os.path.join(pipeline_dir, 'embryos.csv')
@@ -148,11 +151,24 @@ csv_file.to_csv(csv_path, index=False)
 #######################################################################
 # Create images individual embryos:
 
+
 def make_maxproj(im, channel_num):
 
     im = im[:,channel_num,:,:]
-    im = np.max(im,axis=0)
+    im = np.max(im,axis=0).astype(np.float64)
+    # # Normalize
+    im = exposure.rescale_intensity(im,  out_range=(0,1))
     return im
+
+def make_meanproj(im, channel_num):
+
+    im = im[:,channel_num,:,:]
+    im = np.mean(im,axis=0)
+    # Normalize
+    mi, ma = np.percentile(im, (40, 100))
+    im = exposure.rescale_intensity(im, in_range=(mi, ma), out_range=(0,1))
+    return im
+
 
 # create finaldata images and preview images:
 
@@ -174,7 +190,8 @@ def make_final_tifs_and_preview(im_df, dir_path_tif, dir_path_finaldata, mask_fu
         embryo_mask = mask_full_im[coords[0]:coords[1],coords[2]:coords[3]]
         embryo_mask[embryo_mask==unique_labels[i]] = 255
         embryo_mask[embryo_mask!=255] = 0
-        tif.imsave(os.path.join(dir_path_finaldata,'masks',im_df.at[idx,"cropped_mask_file"]), embryo_mask.astype(np.int8))
+        embryo_mask = embryo_mask.astype(np.uint8)
+        tif.imsave(os.path.join(dir_path_finaldata,'masks',im_df.at[idx,"cropped_mask_file"]), embryo_mask.astype(np.uint8))
         os.chmod(os.path.join(dir_path_finaldata,'masks',im_df.at[idx,"cropped_mask_file"]), 0o664)
         # Save the mask also in scratch masks dir:
         shutil.copyfile(os.path.join(dir_path_finaldata,'masks',im_df.at[idx,"cropped_mask_file"]), 
@@ -186,24 +203,20 @@ def make_final_tifs_and_preview(im_df, dir_path_tif, dir_path_finaldata, mask_fu
         os.chmod(os.path.join(dir_dapi, embryo_name), 0o664)
 
         dapi_im = make_maxproj(embryo_tif, int(im_df.at[idx,"DAPI channel"]))
-        fish_im = make_maxproj(embryo_tif, 0)
-        gfp_im = make_maxproj(embryo_tif, int(im_df.at[idx,"GFP channel"]))
-
-        # Normalize images:
-        dapi_im = dapi_im/np.max(dapi_im) if np.max(dapi_im)>1 else dapi_im
-        fish_im = fish_im/np.max(fish_im) if np.max(fish_im)>1 else fish_im
-        gfp_im = gfp_im/np.max(gfp_im) if np.max(gfp_im)>1 else gfp_im
+        fish_im0 = make_meanproj(embryo_tif, 0)
+        fish_im2 = make_meanproj(embryo_tif, 2)
+        #gfp_im = make_maxproj(embryo_tif, int(im_df.at[idx,"GFP channel"]))
 
         ## Create the preview:
-        preview_im = np.zeros((gfp_im.shape[0]*2, gfp_im.shape[1]*2), dtype=np.float32)
+        preview_im = np.zeros((fish_im0.shape[0]*2, fish_im0.shape[1]*2), dtype=np.float32)
 
-        preview_im[:gfp_im.shape[0], :gfp_im.shape[1]] = gfp_im
-        preview_im[:gfp_im.shape[0], gfp_im.shape[1]:] = embryo_mask/255
-        preview_im[gfp_im.shape[0]:, :gfp_im.shape[1]] = dapi_im
-        preview_im[gfp_im.shape[0]:, gfp_im.shape[1]:] = fish_im
+        preview_im[:fish_im0.shape[0], :fish_im0.shape[1]] = dapi_im
+        preview_im[:fish_im0.shape[0], fish_im0.shape[1]:] = embryo_mask/255
+        preview_im[fish_im0.shape[0]:, :fish_im0.shape[1]] = fish_im0
+        preview_im[fish_im0.shape[0]:, fish_im0.shape[1]:] = fish_im2
 
-        tif.imsave(os.path.join(dir_preview,embryo_name), preview_im)
-        os.chmod(os.path.join(dir_preview,embryo_name), 0o664)
+        io.imsave(os.path.join(dir_preview, f'{embryo_name[:-4]}.png'), preview_im)
+        os.chmod(os.path.join(dir_preview, f'{embryo_name[:-4]}.png'), 0o664)
 
     return is_dapi_stack
 
