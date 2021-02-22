@@ -78,8 +78,12 @@ for i in idxs:
 	preview_im[fish_im0.shape[0]:, :fish_im0.shape[1]] = fish_im0
 	preview_im[fish_im0.shape[0]:, fish_im0.shape[1]:] = fish_im2
 
-	io.imsave(os.path.join(dir_path_preview, f'{name[:-4]}.png'), preview_im)
-	os.chmod(os.path.join(dir_path_preview, f'{name[:-4]}.png'), 0o664)
+	preview_path = os.path.join(dir_path_preview, f'{name[:-4]}.png')
+	if os.path.exists(preview_path):
+		os.remove(preview_path)
+		
+	io.imsave(preview_path, preview_im)
+	os.chmod(preview_path, 0o664)
 
 
 csv_file.to_csv(csv_path, index=False)
