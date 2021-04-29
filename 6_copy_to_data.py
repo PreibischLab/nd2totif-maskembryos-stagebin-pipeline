@@ -58,11 +58,17 @@ for i,n in enumerate(tifs_names):
 		shutil.copyfile(new_tifs_paths[i], os.path.join(dir_path_data_finaldata, 'tifs', n))
 		shutil.copyfile(os.path.join(dir_path_scratch_finaldata, 'masks', f'{n[:-4]}.mask.tif'), 
 			os.path.join(dir_path_data_finaldata, 'masks', f'{n[:-4]}.mask.tif'))
-		shutil.copyfile(os.path.join(dir_path_scratch_preview, n), os.path.join(dir_path_data_preview, n))
+		shutil.copyfile(os.path.join(dir_path_scratch_preview, f'{n[:-4]}.png'), os.path.join(dir_path_data_preview, f'{n[:-4]}.png'))
+
+		for c in range(3):
+			shutil.copyfile(os.path.join(dir_path_scratch_finaldata, 'medians', f'c{c}_{n}'), 
+				os.path.join(dir_path_data_finaldata, 'medians', f'c{c}_{n}'))
+
+			os.chmod(os.path.join(dir_path_data_finaldata, 'medians', f'c{c}_{n}'), 0o664)
 
 		os.chmod(os.path.join(dir_path_data_finaldata, 'tifs', n), 0o664)
 		os.chmod(os.path.join(dir_path_data_finaldata, 'masks', f'{n[:-4]}.mask.tif'), 0o664)
-		os.chmod(os.path.join(dir_path_data_preview, n), 0o664)
+		os.chmod(os.path.join(dir_path_data_preview, f'{n[:-4]}.png'), 0o664)
 
 	else:
 		logging.warning(f'{n} is already in data, double name')

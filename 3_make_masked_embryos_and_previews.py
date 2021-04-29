@@ -9,6 +9,7 @@ from skimage import io
 import shutil
 
 from skimage import exposure
+from scipy.ndimage import median_filter
 
 
 pipeline_dir = os.path.join('/scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline')
@@ -53,6 +54,7 @@ os.makedirs(dir_path_finaldata, mode=0o777)
 
 os.makedirs(os.path.join(dir_path_finaldata,'tifs'), mode=0o777) 
 os.makedirs(os.path.join(dir_path_finaldata,'masks'), mode=0o777) 
+os.makedirs(os.path.join(dir_path_finaldata,'medians'), mode=0o777) 
 
 # Load the predicted images:
 try:
@@ -169,6 +171,22 @@ def make_meanproj(im, channel_num):
     im = exposure.rescale_intensity(im, in_range=(mi, ma), out_range=(0,1))
     return im
 
+def make_medians(im, embryo_name):
+
+    if im.ndim==4 and im.shape[0]>40 and 3<im.shape[1]<6:
+    
+        for ci in range(3):
+
+            c_im = im[:,ci].astype(np.int16)
+
+            med_c_im = np.zeros(c_im.shape, dtype=np.int16)
+
+            for i,s_im in enumerate(c_im):
+                med_c_im[i] = median_filter(s_im, size=filter_size, mode='nearest')
+            
+            final_im = c_im - med_c_im
+            
+            tif.imsave(os.path.join(dir_path_finaldata, 'medians', f'c{ci}_{embryo_name}'), final_im)
 
 # create finaldata images and preview images:
 
@@ -217,6 +235,9 @@ def make_final_tifs_and_preview(im_df, dir_path_tif, dir_path_finaldata, mask_fu
 
         io.imsave(os.path.join(dir_preview, f'{embryo_name[:-4]}.png'), preview_im)
         os.chmod(os.path.join(dir_preview, f'{embryo_name[:-4]}.png'), 0o664)
+
+        ## for fish channels: make per slice median filter and substract it from org image:
+        make_medians(embryo_tif, embryo_name)
 
     return is_dapi_stack
 
