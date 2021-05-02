@@ -3,6 +3,7 @@ from glob import glob
 import shutil
 import sys
 import logging
+#from git import Repo
 
 pipeline_dir = '/scratch/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline'
 
@@ -94,6 +95,9 @@ for i,n in enumerate(tifs_names):
 shutil.rmtree(dir_path_new_tif, ignore_errors=True)
 shutil.rmtree(dir_path_new_nd2, ignore_errors=True)
 shutil.rmtree(dir_path_scratch_finaldata, ignore_errors=True)
+
+## Git add, commit, push
+
 
 ############################### Log file output status ################################
 

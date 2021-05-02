@@ -55,6 +55,8 @@ os.makedirs(dir_path_finaldata, mode=0o777)
 os.makedirs(os.path.join(dir_path_finaldata,'tifs'), mode=0o777) 
 os.makedirs(os.path.join(dir_path_finaldata,'masks'), mode=0o777) 
 os.makedirs(os.path.join(dir_path_finaldata,'medians'), mode=0o777) 
+ 
+filter_size = 19
 
 # Load the predicted images:
 try:
