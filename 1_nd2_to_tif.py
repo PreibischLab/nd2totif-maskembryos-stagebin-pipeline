@@ -61,7 +61,7 @@ def find_latest_in_condition(filenames_in_csv, condition):
     as_num = [int(f.split('_')[-1].split('.')[0]) for f in condition_existing_files]
     condition_max = max(as_num)
     return condition_max
-
+    
 
 def get_channels_info(meta):
     channels_info = [value for key, value in meta.items() if "plane_" in key and isinstance(value,dict)]

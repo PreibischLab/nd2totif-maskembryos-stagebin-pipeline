@@ -52,9 +52,9 @@ logging.info("\n\nStarting script stage_prediction\n ***************************
 
 ############################### Predict age with autoencoder ################################
 
-os.makedirs(masked_cropped_20slices_dapi_path, exist_ok=True)
-os.makedirs(masked_cropped_20slices_dapi_normed_path, exist_ok=True)
-os.makedirs(embryos_normed_path, exist_ok=True)
+os.makedirs(masked_cropped_20slices_dapi_path, exist_ok=True, mode=0o777)
+os.makedirs(masked_cropped_20slices_dapi_normed_path, exist_ok=True, mode=0o777)
+os.makedirs(embryos_normed_path, exist_ok=True, mode=0o777)
 
 csv_file = pd.read_csv(csv_path)
 csv_file = csv_file.reset_index(drop=True)
@@ -109,6 +109,7 @@ for ii,i in enumerate(df_embryos_to_predict.index):
         if im.shape[1]>0:
 
             tif.imsave(os.path.join(masked_cropped_20slices_dapi_path, im_name), im)
+            os.chmod(os.path.join(masked_cropped_20slices_dapi_path, im_name), 0o664)
 
 logging.info(f'created masked dapi images')
 
@@ -161,6 +162,7 @@ for i,embryo_stack_im in enumerate(embryos_stacks):
     #print(embryo_stack_im.shape, i, im_name)
     im = normalize_image(embryo_stack_im)
     tif.imsave(os.path.join(masked_cropped_20slices_dapi_normed_path,im_name), im)
+    os.chmod(os.path.join(masked_cropped_20slices_dapi_normed_path,im_name), 0o664)
     embryos_mid_slices_normed.append(im)
 
 logging.info(f'normalized images and saved it')
@@ -217,6 +219,8 @@ def make_tiles(ims_names):
             im_tiles = np.asarray(im_tiles, dtype=np.float32)
 
             tif.imsave(os.path.join(embryos_normed_path, f'{im_name[:-4]}_tiles.tif'), im_tiles)
+            os.chmod(os.path.join(embryos_normed_path, f'{im_name[:-4]}_tiles.tif'), 0o664)
+
 
 make_tiles(ims_names)
 

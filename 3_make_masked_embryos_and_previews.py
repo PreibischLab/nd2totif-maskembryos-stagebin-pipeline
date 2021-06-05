@@ -189,6 +189,7 @@ def make_medians(im, embryo_name):
             final_im = c_im - med_c_im
             
             tif.imsave(os.path.join(dir_path_finaldata, 'medians', f'c{ci}_{embryo_name}'), final_im)
+            os.chmod(os.path.join(dir_path_finaldata, 'medians', f'c{ci}_{embryo_name}'), 0o664)
 
 # create finaldata images and preview images:
 

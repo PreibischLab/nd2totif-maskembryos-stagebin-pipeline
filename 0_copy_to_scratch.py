@@ -178,11 +178,13 @@ for idx in missing_gfp_csv.index:
 	im = tif.imread(os.path.join(dir_path_tif, filename))
 
 	tif.imsave(os.path.join(dir_path_new_tif, filename), im)
+	os.chmod(os.path.join(dir_path_new_tif, filename), 0o664)
 
 	gfp_ch = missing_gfp_csv.at[idx,"GFP channel"]
 	if gfp_ch!=-1:
 		im_gfp = np.max(im[:,int(gfp_ch),:,:], axis=0)
 		tif.imsave(os.path.join(dir_path_maxp_gfp, filename), im_gfp)
+		os.chmod(os.path.join(dir_path_maxp_gfp, filename), 0o664)
 
 
 ############################### Log file output status ################################
