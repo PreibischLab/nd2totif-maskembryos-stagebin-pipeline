@@ -20,7 +20,7 @@ dir_path = '.'
 #dir_path = '/fast/AG_Preibisch/Ella/embryo/nd2totif_maskembryos_stagebin_pipeline/'
 
 dir_path_maxp_gfp = os.path.join(dir_path, 'maxp_gfp_temp_files')
-csv_path = os.path.join(dir_path, 'embryos.csv')
+#csv_path = os.path.join(dir_path, 'embryos.csv')
 predicted_npz_path = os.path.join(dir_path, 'predicted_masks_and_filenames.npz')
 
 #pipeline_dir_path = os.path.join(dir_path, 'nd2totif_maskembryos_stagebin_pipeline')
