@@ -242,7 +242,7 @@ empties_in_c_types = [csv_file.index[csv_file[f'c{i}_type'].apply(pd.isna)] for 
 for i in range(3):
     for idx in empties_in_c_types[i]:
         if not pd.isna(csv_file.at[idx,f'c{i}']):
-            c_available_types = channels_types_dict[csv_file.at[i,f'c{i}']]
+            c_available_types = channels_types_dict[csv_file.at[idx,f'c{i}']]
             types_in_filename = csv_file.at[idx,"original filename"].split("_")[2:-1]
             exist_type = [it for it in types_in_filename for iitt in c_available_types if it==iitt]
             if len(exist_type)>1:

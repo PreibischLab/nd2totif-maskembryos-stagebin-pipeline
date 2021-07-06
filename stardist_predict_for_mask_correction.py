@@ -67,25 +67,17 @@ for p in gfp_images_paths:
 
 # Resize the data:
 ## order ---- 0: Nearest-neighbor, 1: Bi-linear (default)
-def resize_data(data, img_size, anti_aliasing=True, order=1):
-    
-    data_rescaled = np.zeros((data.shape[0], img_size, img_size))
 
-    for i,im in enumerate(data):
-        im = resize(im, (img_size, img_size), anti_aliasing=anti_aliasing, mode='constant', order=order)
-        data_rescaled[i] = im
-        
-    return data_rescaled
-
-img_size = 512
+ims_sizes = []
 
 # Normalize + resize each image:
 for i in range(len(gfp_images)):
+    ims_sizes.append(gfp_images[i].shape)
     gfp_images[i][gfp_images[i]==0] = np.nan
     normed_im = (gfp_images[i]-np.nanmin(gfp_images[i])) / (np.nanmax(gfp_images[i])-np.nanmin(gfp_images[i]))
     normed_im = np.nan_to_num(normed_im)
 
-    resized_im = resize(normed_im, (img_size, img_size), anti_aliasing=True, mode='constant', order=1)
+    resized_im = resize(normed_im, (int(ims_sizes[i][0]/2), int(ims_sizes[i][1]/2)), anti_aliasing=True, mode='constant', order=1)
     gfp_images[i] = resized_im
 
 
@@ -94,11 +86,9 @@ logging.info(f'Starting mask predictions')
 model = StarDist2D(None, name='stardist', basedir="")
 
 # Predict instance segmentation in each image usng stardist:
-img_size = 1024
-Y=[]
 for i,x in enumerate(gfp_images):
     y, details = model.predict_instances(x)
-    y = resize(y, (img_size, img_size), anti_aliasing=False, mode='constant', order=0)
+    y = resize(y, (ims_sizes[i][0], ims_sizes[i][1]), anti_aliasing=False, mode='constant', order=0)
     tif.imsave(os.path.join(dir_path_corrected_masks, f'{gfp_images_names[i]}.mask.tif'), y)
     os.chmod(os.path.join(dir_path_corrected_masks, f'{gfp_images_names[i]}.mask.tif'), 0o664)
 
